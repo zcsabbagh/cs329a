@@ -16,6 +16,20 @@ from tqdm import tqdm
 import random
 from validation import TrajectoryValidator
 
+# Load environment variables from .env file
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    # dotenv not available, fall back to manual loading
+    env_file = Path('.env')
+    if env_file.exists():
+        with open(env_file) as f:
+            for line in f:
+                if '=' in line and not line.strip().startswith('#'):
+                    key, value = line.strip().split('=', 1)
+                    os.environ[key] = value
+
 # Claude Sonnet pricing (per million tokens)
 CLAUDE_SONNET_INPUT_COST = 3.00   # $3.00 per million input tokens
 CLAUDE_SONNET_OUTPUT_COST = 15.00  # $15.00 per million output tokens
@@ -29,31 +43,31 @@ STRATEGY_TYPES = {
     "optimal": {
         "description": "Quick, efficient, correct inference. 3-4 turns. Good counterfactual → Followed → Success.",
         "target_turns": "3-4",
-        "success_rate": 0.95,
+        "success_rate": 0.98,  # Almost always succeeds
         "characteristics": "Accurate probabilities in counterfactuals, follows best option, minimal questions"
     },
     "alternative_success": {
         "description": "Different approach, still succeeds. 4-6 turns. Different question order or disclosure pattern.",
         "target_turns": "4-6", 
-        "success_rate": 0.85,
+        "success_rate": 0.82,  # Good success rate but more variable
         "characteristics": "Valid alternative approach, good counterfactuals, succeeds via different path"
     },
     "failed": {
         "description": "Clear failure mode. 2-4 turns. Either poor counterfactual OR good counterfactual but ignored.",
         "target_turns": "2-4",
-        "success_rate": 0.10,
+        "success_rate": 0.05,  # Almost always fails
         "characteristics": "Poor probability estimates OR ignores good counterfactual advice"
     },
     "recovery": {
         "description": "Wrong inference → Recognition → Correction → Success. 5-7 turns. Must show explicit belief correction.",
         "target_turns": "5-7",
-        "success_rate": 0.75,
+        "success_rate": 0.73,  # Variable - depends on recovery quality
         "characteristics": "Initial mistake, recognizes error, corrects beliefs explicitly, recovers to success"
     },
     "information_efficiency": {
         "description": "Either minimal (2-3 turns, 1-2 questions) OR over-investigation (6-8 turns, 4+ questions).",
-        "target_turns": "2-3 or 6-8",
-        "success_rate": 0.70,
+        "target_turns": "2-3 or 6-8", 
+        "success_rate": 0.65,  # More variable due to efficiency extremes
         "characteristics": "Tests efficiency extremes - very few or too many questions"
     }
 }
@@ -79,26 +93,32 @@ TARGET PREFERENCES:
 AVAILABLE FACTS:
 {available_facts_text}
 
-STRATEGY REQUIREMENTS FOR {strategy_type.upper()}:
+STRATEGY REQUIREMENTS FOR {strategy_type_upper}:
 {strategy_description}
 Target turns: {target_turns}
 Success expectation: {success_expectation}
 Key characteristics: {strategy_characteristics}
 
 CRITICAL REQUIREMENTS:
-1. Include counterfactual_analysis at EVERY decision turn with:
+1. VALID ACTION TYPES - Each turn must use ONLY one of these three action_type values:
+   - "ASK": Ask a question to gather information about preferences
+   - "DISCLOSE": Share information or facts with the target
+   - "ACT": Make a final recommendation or take action
+   Do NOT use RECOMMEND, ADVOCATE, or any other action types.
+
+2. Include counterfactual_analysis at EVERY decision turn with:
    - 2+ alternative actions (if_ask_direct, if_disclose_cost, if_act_now, etc.)
    - p_success estimate (0.0-1.0) for each alternative
    - Reasoning why each would succeed/fail
-   
-2. Strategy-specific requirements:
+
+3. Strategy-specific requirements:
    - OPTIMAL: Accurate probabilities, follows best counterfactual advice
-   - FAILED: Poor probabilities OR ignores good counterfactual warnings  
+   - FAILED: Poor probabilities OR ignores good counterfactual warnings
    - RECOVERY: Initially inaccurate → explicit recognition → correction. Must include phrases like "Initial inference was wrong because..." or "I made a mistake in assuming..."
    - ALTERNATIVE: Different valid approach but good counterfactuals
    - EFFICIENCY: Either very few questions (2-3 turns) or over-investigation (6-8 turns)
 
-3. Trajectory must match target turn count and success expectation
+4. Trajectory must match target turn count and success expectation
 
 Output complete trajectory in exact JSON format:
 {{
@@ -142,6 +162,13 @@ Output complete trajectory in exact JSON format:
   ]
 }}
 
+TARGET PERSONALITY TYPE:
+- Type: {target_type}
+- Description: {target_description}  
+- Response Style: {target_response_style}
+
+IMPORTANT: The target should exhibit this personality type consistently throughout the conversation. Their responses, preferences, and decision-making should reflect this personality while still allowing for the scenario's true preferences to emerge through the advocate's strategy.
+
 Generate trajectory matching {strategy_type} characteristics exactly. Output ONLY valid JSON."""
 
 class StrategyDistribution:
@@ -159,6 +186,35 @@ class StrategyDistribution:
             self.strategy_mix = []
             for i in range(trajectories_per_scenario):
                 self.strategy_mix.append(strategies[i % len(strategies)])
+        
+        # Target personality types for maximum variety
+        self.target_personalities = [
+            {
+                "type": "luxury_focused",
+                "description": "Values premium experiences, willing to pay more for quality service and amenities",
+                "likely_responses": "Emphasizes comfort, service quality, exclusivity"
+            },
+            {
+                "type": "budget_conscious", 
+                "description": "Careful about spending, looks for value and cost-effectiveness",
+                "likely_responses": "Mentions price concerns, asks about deals, compares costs"
+            },
+            {
+                "type": "adventure_seeker",
+                "description": "Thrives on new experiences, physical challenges, and excitement",
+                "likely_responses": "Excited by activities, mentions past adventures, seeks thrills"
+            },
+            {
+                "type": "culture_enthusiast",
+                "description": "Passionate about learning, history, arts, and authentic local experiences",
+                "likely_responses": "Asks about museums, local customs, educational opportunities"
+            },
+            {
+                "type": "convenience_prioritizer",
+                "description": "Values ease, efficiency, and minimal planning/effort",
+                "likely_responses": "Prefers all-inclusive, dislikes complicated itineraries, wants simplicity"
+            }
+        ]
     
     def get_strategy_for_trajectory(self, trajectory_index: int) -> str:
         """Get strategy type for the given trajectory index."""
@@ -167,6 +223,10 @@ class StrategyDistribution:
     def get_strategy_letter(self, trajectory_index: int) -> str:
         """Get letter identifier for trajectory (a, b, c, d, e)."""
         return chr(ord('a') + trajectory_index)
+    
+    def get_target_personality(self, trajectory_index: int) -> dict:
+        """Get target personality type for the given trajectory index."""
+        return self.target_personalities[trajectory_index % len(self.target_personalities)]
 
 
 async def generate_single_trajectory(
@@ -174,6 +234,7 @@ async def generate_single_trajectory(
     scenario: Dict, 
     strategy_type: str,
     strategy_letter: str,
+    target_personality: Dict,
     max_retries: int = 3
 ) -> Dict:
     """Generate a single trajectory for a given scenario and strategy."""
@@ -206,10 +267,30 @@ async def generate_single_trajectory(
     
     # Strategy info
     strategy_info = STRATEGY_TYPES[strategy_type]
-    success_boolean = "true" if random.random() < strategy_info["success_rate"] else "false"
+    
+    # Add more dramatic variance to success rates
+    base_rate = strategy_info["success_rate"]
+    # Add personality influence on success probability
+    personality_influence = {
+        "luxury_focused": 0.05,     # Slightly easier to persuade with luxury
+        "budget_conscious": -0.1,   # Harder to persuade away from cost-effective options
+        "adventure_seeker": 0.0,    # Neutral
+        "culture_enthusiast": -0.05, # Slightly harder if cultural mismatch
+        "convenience_prioritizer": 0.1  # Easier with convenience-focused options
+    }
+    
+    adjusted_rate = base_rate + personality_influence.get(target_personality["type"], 0.0)
+    adjusted_rate = max(0.02, min(0.98, adjusted_rate))  # Clamp between 2% and 98%
+    
+    # Add random variance for dramatic differences
+    variance = random.uniform(-0.15, 0.15)  # ±15% variance
+    final_rate = max(0.01, min(0.99, adjusted_rate + variance))
+    
+    success_boolean = "true" if random.random() < final_rate else "false"
     
     prompt = TRAJECTORY_GENERATION_PROMPT_TEMPLATE.format(
         strategy_type=strategy_type,
+        strategy_type_upper=strategy_type.upper(),
         scenario_id=scenario.get("scenario_id", "unknown"),
         scenario_type=scenario.get("scenario_type", "unknown"),
         condition=scenario.get("condition", "HIDDEN"),
@@ -230,7 +311,10 @@ async def generate_single_trajectory(
         strategy_letter=strategy_letter,
         first_preference=first_pref,
         second_preference=second_pref,
-        success_boolean=success_boolean
+        success_boolean=success_boolean,
+        target_type=target_personality["type"],
+        target_description=target_personality["description"],
+        target_response_style=target_personality["likely_responses"]
     )
     
     validator = TrajectoryValidator()
@@ -238,10 +322,9 @@ async def generate_single_trajectory(
     for attempt in range(max_retries):
         try:
             message = await client.messages.create(
-                model="claude-sonnet-4-20250514",
+                model="claude-sonnet-4-5",
                 max_tokens=8000,
-                temperature=0.7,
-                top_p=0.9,
+                temperature=1.0,
                 messages=[
                     {
                         "role": "user",
@@ -350,9 +433,9 @@ async def generate_trajectories_for_scenarios(
     # Create semaphore to limit concurrent requests
     semaphore = asyncio.Semaphore(max_parallel)
     
-    async def generate_with_semaphore(scenario: Dict, strategy_type: str, strategy_letter: str):
+    async def generate_with_semaphore(scenario: Dict, strategy_type: str, strategy_letter: str, target_personality: Dict):
         async with semaphore:
-            return await generate_single_trajectory(client, scenario, strategy_type, strategy_letter)
+            return await generate_single_trajectory(client, scenario, strategy_type, strategy_letter, target_personality)
     
     # Create all tasks
     tasks = []
@@ -363,7 +446,8 @@ async def generate_trajectories_for_scenarios(
         for traj_idx in range(trajectories_per_scenario):
             strategy_type = strategy_dist.get_strategy_for_trajectory(traj_idx)
             strategy_letter = strategy_dist.get_strategy_letter(traj_idx)
-            tasks.append(generate_with_semaphore(scenario, strategy_type, strategy_letter))
+            target_personality = strategy_dist.get_target_personality(traj_idx)
+            tasks.append(generate_with_semaphore(scenario, strategy_type, strategy_letter, target_personality))
     
     # Process with progress bar
     scenario_count = 0
@@ -456,7 +540,7 @@ def main():
     args = parser.parse_args()
     
     # Validate max_parallel
-    if args.max_parallel < 1 or args.max_parallel > 20:
+    if args.max_parallel < 1 or args.max_parallel > 30:
         print("❌ Error: --max-parallel must be between 1 and 20")
         return
     

@@ -15,6 +15,20 @@ import os
 from tqdm import tqdm
 import random
 
+# Load environment variables from .env file
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    # dotenv not available, fall back to manual loading
+    env_file = Path('.env')
+    if env_file.exists():
+        with open(env_file) as f:
+            for line in f:
+                if '=' in line and not line.strip().startswith('#'):
+                    key, value = line.strip().split('=', 1)
+                    os.environ[key] = value
+
 # Claude Sonnet pricing (per million tokens)
 CLAUDE_SONNET_INPUT_COST = 3.00   # $3.00 per million input tokens
 CLAUDE_SONNET_OUTPUT_COST = 15.00  # $15.00 per million output tokens
@@ -32,28 +46,63 @@ SCENARIO_GENERATION_PROMPT_TEMPLATE = """Generate a Planning Theory of Mind scen
 
 Create a persuasion scenario where an Advocate tries to convince a Target to choose Option A over Option B.
 
-Requirements:
-1. Generate a realistic, detailed context for the decision
-2. Create specific Option A and Option B with clear differences
-3. Generate 8-12 facts about both options (balanced between favoring A, B, and neutral)
-4. Define 3-5 preference dimensions relevant to the scenario
-5. Create target preferences with realistic strength values (0.0-1.0)
-6. Provide an optimal strategy hint for successful persuasion
+QUALITY REQUIREMENTS:
+1. REALISTIC CONTEXT: Create a psychologically believable person with authentic motivations, constraints, and background details
+2. CONCRETE OPTIONS: Design specific, detailed options with meaningful trade-offs and realistic characteristics
+3. STRATEGIC FACTS: Generate 9-11 facts that create genuine dilemmas. Facts should be:
+   - Specific and concrete (include numbers, names, details)
+   - Believable and realistic for the scenario type
+   - Distributed: ~40% favor A, ~40% favor B, ~20% neutral
+   - Create meaningful trade-offs between preferences
+4. HUMAN-LIKE PREFERENCES: Use realistic strength distributions:
+   - Avoid round numbers (0.1, 0.5, 0.9)
+   - Use natural ranges (0.15-0.95)
+   - Ensure preferences reflect real human psychology
+5. ACTIONABLE STRATEGY: Provide specific, tactical advice about which facts to emphasize and how to frame arguments
 
-Output Format (JSON only, no markdown):
+ENHANCED CONTEXT GUIDELINES:
+- Include the person's role, background, and stake in the decision
+- Add constraints (time pressure, budget, other people's opinions)
+- Mention relevant past experiences or personality traits
+- Specify what makes this decision particularly challenging
+
+DIVERSITY REQUIREMENTS (CRITICAL):
+- Use completely different names, genders, ages (20s-60s), and ethnicities
+- Vary industries dramatically: healthcare, education, retail, manufacturing, non-profit, government, hospitality, finance, arts, etc.
+- Mix professional levels: entry-level employees, managers, executives, business owners, retirees, students
+- Include different life stages: single, married, parents, empty nesters, divorced, widowed
+- Vary geographic locations and socioeconomic backgrounds
+- Include different personality types and decision-making styles
+- NO repetition of company names, industries, or similar roles across scenarios
+
+SCENARIO TYPE GUIDANCE:
+- relationship_conflict: Dating disputes, marriage issues, breakups, family arguments
+- family_decision: Where to live, childcare choices, elder care, family traditions
+- personal_lifestyle: Diet changes, exercise routines, social media use, personal habits
+- dining_choice: Restaurant selection, meal planning, dietary restrictions, cooking vs ordering
+- parenting_dilemma: School choices, discipline approaches, screen time, activities
+- friendship_issue: Social conflicts, loyalty dilemmas, group dynamics, boundary setting
+- health_decision: Medical treatments, mental health support, fitness choices, insurance
+- hobby_choice: Learning new skills, sports participation, creative pursuits, time allocation
+- education_path: College selection, degree programs, certification courses, skill development
+- career_change: Job switching, industry transitions, work-life balance, side hustles
+- living_situation: Roommate conflicts, neighborhood choice, apartment vs house, moving decisions
+- social_event: Party planning, wedding attendance, holiday celebrations, social obligations
+
+OUTPUT FORMAT (JSON only, no markdown):
 {{
   "scenario_id": "scenario_{scenario_num:03d}",
   "scenario_type": "{scenario_type}",
   "condition": "{condition}",
   "description": "Brief description of the decision context",
-  "context": "Detailed background and decision situation",
+  "context": "Rich psychological context with person's background, motivations, constraints, and stakes",
   "option_a": {{
     "name": "Option A name",
-    "description": "Detailed description of Option A"
+    "description": "Detailed, specific description with concrete features and characteristics"
   }},
   "option_b": {{
-    "name": "Option B name",
-    "description": "Detailed description of Option B"
+    "name": "Option B name", 
+    "description": "Detailed, specific description with concrete features and characteristics"
   }},
   "target_preferences": {{
     "stated_explicitly": {explicitly_stated},
@@ -65,24 +114,24 @@ Output Format (JSON only, no markdown):
     }}
   }},
   "available_facts": [
-    {{"id": "fact_1", "content": "Specific fact about options", "favors": "A", "dimension": "cost"}},
-    {{"id": "fact_2", "content": "Another specific fact", "favors": "B", "dimension": "quality"}}
+    {{"id": "fact_1", "content": "Specific, concrete fact with details/numbers", "favors": "A", "dimension": "preference_dimension"}},
+    {{"id": "fact_2", "content": "Another specific, concrete fact", "favors": "B", "dimension": "preference_dimension"}}
   ],
   "complexity": "{complexity}",
-  "optimal_strategy_hint": "Brief strategy description for best approach"
+  "optimal_strategy_hint": "Specific tactical advice about which facts to emphasize, how to frame arguments, and what psychological approaches to use"
 }}
 
-Complexity Guidelines:
-- Standard: Clear preference hierarchy, straightforward facts
-- Moderate: Some conflicting preferences, moderate fact complexity
-- Complex: Multiple competing preferences, nuanced facts
-- Adversarial: Hidden preferences, misleading initial responses
+COMPLEXITY GUIDELINES:
+- Standard: Clear preference hierarchy (one dominant), straightforward facts, obvious optimal choice
+- Moderate: Some conflicting preferences, moderate fact complexity, requires careful analysis
+- Complex: Multiple competing preferences, nuanced facts requiring trade-offs, non-obvious optimal choice
+- Adversarial: Hidden/conflicting preferences, misleading facts, requires sophisticated strategy
 
-Preference Structure Guidelines:
-- Single dominant: One preference >0.85, others <0.5
-- Balanced: All preferences 0.4-0.7
-- Two-way tradeoff: Two preferences >0.7, others <0.4
-- Complex: Three+ preferences >0.6
+PREFERENCE STRUCTURE GUIDELINES:
+- Single dominant: One preference 0.8-0.95, others 0.15-0.45
+- Balanced: All preferences 0.35-0.65, no clear hierarchy
+- Two-way tradeoff: Two preferences 0.7-0.9, others 0.1-0.4
+- Complex: Three or more preferences 0.6-0.85
 
 Generate one complete, realistic scenario matching these specifications."""
 
@@ -114,8 +163,19 @@ class ScenarioDistribution:
             "REVEALED": int(0.15 * total_scenarios)
         }
         
-        self.scenario_types = ["vacation_planning", "business_proposal", "charity_donation", "real_estate"]
-        self.type_dist = {t: int(0.25 * total_scenarios) for t in self.scenario_types}
+        self.scenario_types = [
+            "vacation_planning", "business_proposal", "charity_donation", "real_estate",
+            "relationship_conflict", "family_decision", "personal_lifestyle", "dining_choice",
+            "parenting_dilemma", "friendship_issue", "health_decision", "hobby_choice",
+            "education_path", "career_change", "living_situation", "social_event"
+        ]
+        # Equal distribution across all types
+        base_count = total_scenarios // len(self.scenario_types)
+        self.type_dist = {t: base_count for t in self.scenario_types}
+        # Distribute remainder
+        remainder = total_scenarios % len(self.scenario_types)
+        for i in range(remainder):
+            self.type_dist[self.scenario_types[i]] += 1
         
         # Create shuffled lists for even distribution
         self.complexity_queue = self._create_shuffled_queue(self.complexity_dist)
@@ -166,7 +226,7 @@ async def generate_single_scenario(client: anthropic.AsyncAnthropic, specs: Dict
     for attempt in range(max_retries):
         try:
             message = await client.messages.create(
-                model="claude-sonnet-4-20250514",
+                model="claude-sonnet-4-5",
                 max_tokens=4000,
                 temperature=0.8,
                 messages=[
@@ -296,7 +356,7 @@ def main():
     args = parser.parse_args()
     
     # Validate max_parallel
-    if args.max_parallel < 1 or args.max_parallel > 20:
+    if args.max_parallel < 1 or args.max_parallel > 40:
         print("❌ Error: --max-parallel must be between 1 and 20")
         return
     

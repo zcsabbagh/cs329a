@@ -265,7 +265,7 @@ async def generate_scenario(client: anthropic.AsyncAnthropic) -> Dict:
     
     try:
         message = await client.messages.create(
-            model="claude-sonnet-4-20250514",
+            model="claude-sonnet-4-5",
             max_tokens=4000,
             temperature=0.8,
             messages=[
@@ -337,7 +337,7 @@ async def generate_single_trajectory(client: anthropic.AsyncAnthropic, scenario:
     for attempt in range(max_retries):
         try:
             message = await client.messages.create(
-                model="claude-sonnet-4-20250514",
+                model="claude-sonnet-4-5",
                 max_tokens=8000,
                 temperature=0.7,
                 top_p=0.9,
@@ -537,7 +537,7 @@ def main():
     args = parser.parse_args()
     
     # Validate max_parallel
-    if args.max_parallel < 1 or args.max_parallel > 10:
+    if args.max_parallel < 1 or args.max_parallel > 30:
         print("❌ Error: --max-parallel must be between 1 and 10")
         return
     

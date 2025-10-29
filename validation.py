@@ -51,8 +51,8 @@ class TrajectoryValidator:
             self.warnings.append(f"Line {line_num}: Unexpected scenario '{traj['scenario']}'")
         
         # Validate condition
-        if traj["condition"] not in ["HIDDEN", "REVEALED"]:
-            self.errors.append(f"Line {line_num}: Invalid condition '{traj['condition']}'. Must be HIDDEN or REVEALED")
+        if traj["condition"] not in ["HIDDEN", "REVEALED", "PARTIAL"]:
+            self.errors.append(f"Line {line_num}: Invalid condition '{traj['condition']}'. Must be HIDDEN, REVEALED, or PARTIAL")
             is_valid = False
         
         # Validate target_preferences structure
