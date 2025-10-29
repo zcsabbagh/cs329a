@@ -68,26 +68,31 @@ ENHANCED CONTEXT GUIDELINES:
 
 DIVERSITY REQUIREMENTS (CRITICAL):
 - Use completely different names, genders, ages (20s-60s), and ethnicities
-- Vary industries dramatically: healthcare, education, retail, manufacturing, non-profit, government, hospitality, finance, arts, etc.
-- Mix professional levels: entry-level employees, managers, executives, business owners, retirees, students
-- Include different life stages: single, married, parents, empty nesters, divorced, widowed
-- Vary geographic locations and socioeconomic backgrounds
+- For BUSINESS scenarios: Vary industries dramatically (tech, healthcare, retail, manufacturing, consulting, hospitality, etc.)
+- For BUSINESS scenarios: Mix business types (startup, SMB, enterprise, non-profit, family business, franchise)
+- For VACATION scenarios: Vary traveler profiles (families, couples, solo, retirees, young professionals, groups)
+- For VACATION scenarios: Mix destinations (tropical, mountain, urban, rural, domestic, international, adventure, cultural)
 - Include different personality types and decision-making styles
-- NO repetition of company names, industries, or similar roles across scenarios
+- Vary geographic home locations and socioeconomic backgrounds
+- NO repetition of company names, destinations, industries, or similar contexts across scenarios
 
 SCENARIO TYPE GUIDANCE:
-- relationship_conflict: Dating disputes, marriage issues, breakups, family arguments
-- family_decision: Where to live, childcare choices, elder care, family traditions
-- personal_lifestyle: Diet changes, exercise routines, social media use, personal habits
-- dining_choice: Restaurant selection, meal planning, dietary restrictions, cooking vs ordering
-- parenting_dilemma: School choices, discipline approaches, screen time, activities
-- friendship_issue: Social conflicts, loyalty dilemmas, group dynamics, boundary setting
-- health_decision: Medical treatments, mental health support, fitness choices, insurance
-- hobby_choice: Learning new skills, sports participation, creative pursuits, time allocation
-- education_path: College selection, degree programs, certification courses, skill development
-- career_change: Job switching, industry transitions, work-life balance, side hustles
-- living_situation: Roommate conflicts, neighborhood choice, apartment vs house, moving decisions
-- social_event: Party planning, wedding attendance, holiday celebrations, social obligations
+
+VACATION PLANNING SCENARIOS:
+- vacation_destination: Beach resort vs mountain retreat, domestic vs international, adventure vs relaxation
+- vacation_accommodation: Luxury hotel vs budget Airbnb, all-inclusive resort vs independent travel, location trade-offs
+- vacation_activities: Activity-packed itinerary vs relaxed schedule, cultural tours vs outdoor adventures, group vs solo activities
+- vacation_timing: Peak season vs off-season, short trip vs extended vacation, weekend getaway vs long holiday
+- vacation_budget: Splurge on experiences vs save money, prepaid packages vs pay-as-you-go, budget allocation decisions
+- vacation_group: Family trip vs couples getaway, solo travel vs group tour, travel companions and preferences
+
+BUSINESS PLANNING SCENARIOS:
+- business_investment: Equipment purchase, technology upgrade, facility expansion, marketing spend
+- business_partnership: Vendor selection, strategic partnerships, client contracts, supplier negotiations
+- business_strategy: Market expansion vs consolidation, product line decisions, pricing strategies
+- business_hiring: Key personnel decisions, team structure, outsourcing vs in-house, staffing levels
+- business_location: Office space selection, remote vs in-person, relocation decisions, market location
+- business_operations: Process improvements, software systems, workflow optimization, resource allocation
 
 OUTPUT FORMAT (JSON only, no markdown):
 {{
@@ -163,11 +168,13 @@ class ScenarioDistribution:
             "REVEALED": int(0.15 * total_scenarios)
         }
         
+        # Vacation planning scenarios (6 types)
         self.scenario_types = [
-            "vacation_planning", "business_proposal", "charity_donation", "real_estate",
-            "relationship_conflict", "family_decision", "personal_lifestyle", "dining_choice",
-            "parenting_dilemma", "friendship_issue", "health_decision", "hobby_choice",
-            "education_path", "career_change", "living_situation", "social_event"
+            "vacation_destination", "vacation_accommodation", "vacation_activities",
+            "vacation_timing", "vacation_budget", "vacation_group",
+            # Business planning scenarios (6 types)
+            "business_investment", "business_partnership", "business_strategy",
+            "business_hiring", "business_location", "business_operations"
         ]
         # Equal distribution across all types
         base_count = total_scenarios // len(self.scenario_types)
@@ -387,7 +394,7 @@ def main():
     print("  • Complexity: 40% standard, 30% moderate, 20% complex, 10% adversarial")
     print("  • Preferences: 30% single, 30% balanced, 25% two-way, 15% complex")
     print("  • Condition: 60% HIDDEN, 25% PARTIAL, 15% REVEALED")
-    print("  • Types: 25% each of vacation, business, charity, real_estate")
+    print("  • Types: 6 vacation scenarios, 6 business scenarios (evenly distributed)")
     print("=" * 70)
     
     # Generate scenarios
