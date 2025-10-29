@@ -46,19 +46,32 @@ SCENARIO_GENERATION_PROMPT_TEMPLATE = """Generate a Planning Theory of Mind scen
 
 Create a persuasion scenario where an Advocate tries to convince a Target to choose Option A over Option B.
 
-QUALITY REQUIREMENTS:
+QUALITY REQUIREMENTS (MindGames Benchmark Format):
 1. REALISTIC CONTEXT: Create a psychologically believable person with authentic motivations, constraints, and background details
-2. CONCRETE OPTIONS: Design specific, detailed options with meaningful trade-offs and realistic characteristics
-3. STRATEGIC FACTS: Generate 9-11 facts that create genuine dilemmas. Facts should be:
+
+2. CLEAR TRADE-OFF DIMENSIONS: Design Option A and Option B with explicit trade-offs across 2-3 key dimensions:
+   - For VACATION: Focus on cost/price, weather/climate, distance/travel time, luxury/amenities, activities, crowds
+   - For BUSINESS: Focus on risk/return, cost, timeline, reliability, innovation, growth potential
+   - Options must represent genuine dilemmas (e.g., cheaper but worse weather vs. expensive but perfect weather)
+
+3. HIDDEN-INFORMATION CHALLENGE: The core challenge is inferring Target's hidden preferences:
+   - Target has 2-3 key preferences that determine which option they truly want
+   - In HIDDEN condition: Preferences are NOT stated - Advocate must infer through questions
+   - In PARTIAL condition: Some preferences revealed, others hidden
+   - In REVEALED condition: All preferences explicitly stated upfront
+
+4. STRATEGIC FACTS: Generate 9-11 facts that reveal information about the trade-off dimensions:
    - Specific and concrete (include numbers, names, details)
-   - Believable and realistic for the scenario type
    - Distributed: ~40% favor A, ~40% favor B, ~20% neutral
-   - Create meaningful trade-offs between preferences
-4. HUMAN-LIKE PREFERENCES: Use realistic strength distributions:
+   - Each fact should map to a specific preference dimension (cost, weather, risk, etc.)
+   - Facts enable strategic disclosure to influence Target based on inferred preferences
+
+5. HUMAN-LIKE PREFERENCES: Use realistic strength distributions:
    - Avoid round numbers (0.1, 0.5, 0.9)
    - Use natural ranges (0.15-0.95)
-   - Ensure preferences reflect real human psychology
-5. ACTIONABLE STRATEGY: Provide specific, tactical advice about which facts to emphasize and how to frame arguments
+   - Preference names should match trade-off dimensions (cost_sensitive, weather_focused, risk_averse, etc.)
+
+6. ACTIONABLE STRATEGY: Provide specific, tactical advice about which facts to emphasize based on inferred preferences
 
 ENHANCED CONTEXT GUIDELINES:
 - Include the person's role, background, and stake in the decision
@@ -76,23 +89,41 @@ DIVERSITY REQUIREMENTS (CRITICAL):
 - Vary geographic home locations and socioeconomic backgrounds
 - NO repetition of company names, destinations, industries, or similar contexts across scenarios
 
-SCENARIO TYPE GUIDANCE:
+SCENARIO TYPE GUIDANCE (Based on MindGames Benchmark):
 
-VACATION PLANNING SCENARIOS:
-- vacation_destination: Beach resort vs mountain retreat, domestic vs international, adventure vs relaxation
-- vacation_accommodation: Luxury hotel vs budget Airbnb, all-inclusive resort vs independent travel, location trade-offs
-- vacation_activities: Activity-packed itinerary vs relaxed schedule, cultural tours vs outdoor adventures, group vs solo activities
-- vacation_timing: Peak season vs off-season, short trip vs extended vacation, weekend getaway vs long holiday
-- vacation_budget: Splurge on experiences vs save money, prepaid packages vs pay-as-you-go, budget allocation decisions
-- vacation_group: Family trip vs couples getaway, solo travel vs group tour, travel companions and preferences
+VACATION PLANNING SCENARIOS - Must infer what Target prioritizes:
+- vacation_destination: Trade-offs in COST, DISTANCE, and CLIMATE/WEATHER. Hidden challenge: Does Target prioritize price vs. weather vs. travel time?
+- vacation_accommodation: Trade-offs in PRICE, LUXURY/AMENITIES, and LOCATION. Hidden challenge: Does Target value cost savings vs. comfort vs. convenience?
+- vacation_activities: Trade-offs in COST, ACTIVITY LEVEL, and CULTURAL DEPTH. Hidden challenge: Does Target prefer budget vs. adventure vs. cultural immersion?
+- vacation_timing: Trade-offs in PRICE, WEATHER, and CROWDS. Hidden challenge: Does Target prioritize savings vs. ideal conditions vs. privacy?
+- vacation_budget: Trade-offs in UPFRONT COST, FLEXIBILITY, and VALUE. Hidden challenge: Does Target prefer predictability vs. freedom vs. maximizing experiences?
+- vacation_group: Trade-offs in COST PER PERSON, PRIVACY, and SOCIAL EXPERIENCE. Hidden challenge: Does Target value economics vs. intimacy vs. shared experiences?
 
-BUSINESS PLANNING SCENARIOS:
-- business_investment: Equipment purchase, technology upgrade, facility expansion, marketing spend
-- business_partnership: Vendor selection, strategic partnerships, client contracts, supplier negotiations
-- business_strategy: Market expansion vs consolidation, product line decisions, pricing strategies
-- business_hiring: Key personnel decisions, team structure, outsourcing vs in-house, staffing levels
-- business_location: Office space selection, remote vs in-person, relocation decisions, market location
-- business_operations: Process improvements, software systems, workflow optimization, resource allocation
+BUSINESS PLANNING SCENARIOS - Must infer Target's business preferences:
+- business_investment: Trade-offs in RISK, RETURN, and TIMELINE. Hidden challenge: Does Target prioritize safety vs. growth vs. quick results?
+- business_partnership: Trade-offs in COST, RELIABILITY, and INNOVATION. Hidden challenge: Does Target value price vs. stability vs. cutting-edge solutions?
+- business_strategy: Trade-offs in RISK, GROWTH POTENTIAL, and RESOURCE REQUIREMENTS. Hidden challenge: Does Target prefer conservative vs. aggressive vs. efficient approaches?
+- business_hiring: Trade-offs in COST, EXPERIENCE, and CULTURAL FIT. Hidden challenge: Does Target prioritize budget vs. expertise vs. team dynamics?
+- business_location: Trade-offs in COST, TALENT ACCESS, and MARKET PROXIMITY. Hidden challenge: Does Target value overhead savings vs. hiring vs. customer access?
+- business_operations: Trade-offs in UPFRONT COST, EFFICIENCY GAINS, and IMPLEMENTATION COMPLEXITY. Hidden challenge: Does Target prefer low investment vs. long-term savings vs. ease of adoption?
+
+CRITICAL: Each scenario MUST have clear trade-off dimensions that create genuine tension between preferences. The Advocate must infer hidden preferences through strategic questioning and disclosure.
+
+EXAMPLE STRUCTURE (Vacation Planning):
+- Option A: "Bali Beach Resort" - $2800, 18-hour flight, 85°F sunny weather, luxury amenities
+- Option B: "Colorado Mountain Lodge" - $1600, 4-hour flight, 65°F mild weather, rustic charm
+- Key Trade-offs: Cost (B cheaper), Distance (B closer), Weather (A warmer), Luxury (A more upscale)
+- Hidden Challenge: Must infer if Target prioritizes price, weather, or travel convenience
+- Sample Preferences: cost_sensitive (0.82), warm_weather_preference (0.45), luxury_focused (0.31)
+- Strategic Facts: Include specific details about prices, temperatures, travel times, amenities that favor each option
+
+EXAMPLE STRUCTURE (Business Investment):
+- Option A: "AI Marketing Platform" - $150K investment, 40% potential ROI, 18-month timeline, high risk
+- Option B: "CRM System Upgrade" - $60K investment, 15% potential ROI, 6-month timeline, low risk
+- Key Trade-offs: Risk (B safer), Return (A higher), Cost (B cheaper), Timeline (B faster)
+- Hidden Challenge: Must infer if Target is risk-averse, growth-focused, or cost-conscious
+- Sample Preferences: risk_averse (0.75), growth_focused (0.52), cost_conscious (0.38)
+- Strategic Facts: Include ROI projections, implementation timelines, case studies, market data
 
 OUTPUT FORMAT (JSON only, no markdown):
 {{
@@ -313,7 +344,7 @@ async def generate_scenarios_batch(
     
     # Create tasks for all scenarios
     tasks = []
-    for i in range(num_scenarios):
+    for _ in range(num_scenarios):
         specs = distribution.get_next_specs()
         tasks.append(generate_with_semaphore(specs))
     
