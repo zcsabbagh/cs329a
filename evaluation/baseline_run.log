@@ -1,0 +1,43 @@
+======================================================================
+Baseline Agent Evaluation (No Finetuning)
+======================================================================
+
+This evaluates a simple baseline that:
+  - Asks generic questions
+  - Makes random recommendations
+
+Use this to establish baseline performance.
+
+🤖 Initializing baseline agent...
+👤 Initializing simulated human (Claude)...
+
+📂 Loading scenarios from /Users/irawadee.t/Desktop/classes/ptom-bench/cs329a/business_vacation_scenarios.jsonl
+✅ Loaded 50 scenarios
+
+🎯 Starting Evaluation
+======================================================================
+Evaluating:   0%|          | 0/50 [00:00<?, ?it/s]Evaluating:   2%|▏         | 1/50 [00:37<30:46, 37.67s/it]Evaluating:   4%|▍         | 2/50 [01:08<26:44, 33.43s/it]Evaluating:   6%|▌         | 3/50 [01:40<25:46, 32.90s/it]Evaluating:   8%|▊         | 4/50 [02:09<24:09, 31.52s/it]Evaluating:  10%|█         | 5/50 [02:41<23:46, 31.70s/it]Evaluating:  12%|█▏        | 6/50 [03:14<23:24, 31.92s/it]Evaluating:  14%|█▍        | 7/50 [03:55<25:04, 34.98s/it]Evaluating:  16%|█▌        | 8/50 [04:34<25:21, 36.24s/it]Evaluating:  18%|█▊        | 9/50 [05:08<24:20, 35.63s/it]Evaluating:  20%|██        | 10/50 [05:41<23:08, 34.72s/it]Evaluating:  22%|██▏       | 11/50 [06:13<22:08, 34.08s/it]Evaluating:  24%|██▍       | 12/50 [06:54<22:44, 35.90s/it]Evaluating:  26%|██▌       | 13/50 [07:34<23:01, 37.35s/it]Evaluating:  28%|██▊       | 14/50 [08:06<21:24, 35.68s/it]Evaluating:  30%|███       | 15/50 [08:48<21:54, 37.55s/it]Evaluating:  32%|███▏      | 16/50 [09:27<21:34, 38.07s/it]Evaluating:  34%|███▍      | 17/50 [09:58<19:49, 36.03s/it]Evaluating:  36%|███▌      | 18/50 [10:30<18:30, 34.71s/it]Evaluating:  38%|███▊      | 19/50 [11:03<17:38, 34.15s/it]Evaluating:  40%|████      | 20/50 [11:35<16:47, 33.57s/it]Evaluating:  42%|████▏     | 21/50 [12:20<17:53, 37.01s/it]Evaluating:  44%|████▍     | 22/50 [12:55<16:57, 36.33s/it]Evaluating:  46%|████▌     | 23/50 [13:27<15:47, 35.10s/it]Evaluating:  48%|████▊     | 24/50 [14:08<16:01, 36.96s/it]Evaluating:  50%|█████     | 25/50 [14:47<15:31, 37.27s/it]Evaluating:  52%|█████▏    | 26/50 [15:16<13:59, 34.96s/it]Evaluating:  54%|█████▍    | 27/50 [15:50<13:16, 34.65s/it]Evaluating:  56%|█████▌    | 28/50 [16:17<11:51, 32.36s/it]Evaluating:  58%|█████▊    | 29/50 [16:57<12:07, 34.63s/it]Evaluating:  60%|██████    | 30/50 [17:40<12:22, 37.12s/it]Evaluating:  62%|██████▏   | 31/50 [18:21<12:05, 38.20s/it]Evaluating:  64%|██████▍   | 32/50 [18:56<11:11, 37.29s/it]Evaluating:  66%|██████▌   | 33/50 [19:30<10:19, 36.45s/it]Evaluating:  68%|██████▊   | 34/50 [19:59<09:08, 34.27s/it]Evaluating:  70%|███████   | 35/50 [20:39<09:00, 36.00s/it]Evaluating:  72%|███████▏  | 36/50 [21:22<08:51, 37.96s/it]Evaluating:  74%|███████▍  | 37/50 [21:52<07:42, 35.59s/it]Evaluating:  76%|███████▌  | 38/50 [22:28<07:07, 35.64s/it]Evaluating:  78%|███████▊  | 39/50 [23:10<06:54, 37.67s/it]Evaluating:  80%|████████  | 40/50 [23:54<06:36, 39.60s/it]Evaluating:  82%|████████▏ | 41/50 [24:35<05:58, 39.87s/it]Evaluating:  84%|████████▍ | 42/50 [25:12<05:11, 38.99s/it]Evaluating:  86%|████████▌ | 43/50 [25:52<04:35, 39.40s/it]Evaluating:  88%|████████▊ | 44/50 [26:38<04:08, 41.49s/it]Evaluating:  90%|█████████ | 45/50 [27:08<03:10, 38.02s/it]Evaluating:  92%|█████████▏| 46/50 [27:52<02:38, 39.63s/it]Evaluating:  94%|█████████▍| 47/50 [28:27<01:55, 38.34s/it]Evaluating:  96%|█████████▌| 48/50 [29:02<01:14, 37.23s/it]Evaluating:  98%|█████████▊| 49/50 [29:43<00:38, 38.54s/it]Evaluating: 100%|██████████| 50/50 [30:21<00:00, 38.32s/it]Evaluating: 100%|██████████| 50/50 [30:21<00:00, 36.43s/it]
+Error generating response: Error code: 500 - {'type': 'error', 'error': {'type': 'api_error', 'message': 'Overloaded'}, 'request_id': None}
+
+======================================================================
+📊 Results
+======================================================================
+
+🎲 Baseline Performance:
+  • Success Rate: 44.0% (22/50)
+  • Average Turns (successful): 5.50
+  • Average Satisfaction: 0.51
+
+💡 Interpretation:
+  Random baseline (~50% expected). Room for improvement with finetuning!
+
+💾 Results saved to: /Users/irawadee.t/Desktop/classes/ptom-bench/cs329a/evaluation/results/baseline_evaluation.json
+
+======================================================================
+✅ Baseline Evaluation Complete!
+======================================================================
+
+Next steps:
+  1. Review results in the JSON file
+  2. Finetune a model (see ../finetuning/)
+  3. Compare baseline vs finetuned performance

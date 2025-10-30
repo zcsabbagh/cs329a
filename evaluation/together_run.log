@@ -1,0 +1,14 @@
+======================================================================
+Together AI Finetuned Agent Evaluation
+======================================================================
+
+📂 Loading scenarios from /Users/irawadee.t/Desktop/classes/ptom-bench/cs329a/business_vacation_scenarios.jsonl...
+✅ Loaded 400 scenarios
+
+🤖 Initializing finetuned agent...
+  Model: irawadee_5d65/Meta-Llama-3.1-8B-Instruct-Reference-ptom-agent-5713b704
+👤 Initializing simulated human (Claude)...
+
+🎯 Starting Evaluation
+======================================================================
+Evaluating:   0%|          | 0/50 [00:00<?, ?it/s]Evaluating:   2%|▏         | 1/50 [00:31<26:06, 31.96s/it]Evaluating:   4%|▍         | 2/50 [00:40<14:34, 18.22s/it]Evaluating:   6%|▌         | 3/50 [01:18<21:15, 27.14s/it]Evaluating:   8%|▊         | 4/50 [01:53<23:10, 30.23s/it]Evaluating:  10%|█         | 5/50 [02:04<17:24, 23.22s/it]Evaluating:  12%|█▏        | 6/50 [02:11<13:05, 17.84s/it]

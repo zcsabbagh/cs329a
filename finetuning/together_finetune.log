@@ -1,0 +1,40 @@
+======================================================================
+Together AI Finetuning (No GPU Required)
+======================================================================
+
+📊 Training Details:
+  Examples: 7367
+  Estimated tokens: 3,683,500
+  Estimated cost: $11.05
+  Model: meta-llama/Meta-Llama-3.1-8B-Instruct-Reference
+  Epochs: 3
+
+✅ Auto-proceeding with training (--yes flag set)
+
+📤 Uploading training file...
+Uploading file training_data_clean.jsonl:   0%|          | 0.00/55.3M [00:00<?, ?B/s]Uploading file training_data_clean.jsonl:   1%|          | 573k/55.3M [00:00<00:10, 5.40MB/s]Uploading file training_data_clean.jsonl:   6%|▋         | 3.49M/55.3M [00:00<00:03, 17.1MB/s]Uploading file training_data_clean.jsonl:  11%|█         | 6.19M/55.3M [00:00<00:05, 8.57MB/s]Uploading file training_data_clean.jsonl:  16%|█▌        | 8.80M/55.3M [00:00<00:04, 11.4MB/s]Uploading file training_data_clean.jsonl:  19%|█▊        | 10.3M/55.3M [00:01<00:05, 8.65MB/s]Uploading file training_data_clean.jsonl:  22%|██▏       | 12.1M/55.3M [00:01<00:04, 10.3MB/s]Uploading file training_data_clean.jsonl:  26%|██▌       | 14.2M/55.3M [00:01<00:03, 12.1MB/s]Uploading file training_data_clean.jsonl:  28%|██▊       | 15.7M/55.3M [00:01<00:04, 8.87MB/s]Uploading file training_data_clean.jsonl:  32%|███▏      | 17.5M/55.3M [00:01<00:03, 10.4MB/s]Uploading file training_data_clean.jsonl:  35%|███▍      | 19.2M/55.3M [00:01<00:03, 11.3MB/s]Uploading file training_data_clean.jsonl:  37%|███▋      | 20.6M/55.3M [00:01<00:03, 10.9MB/s]Uploading file training_data_clean.jsonl:  39%|███▉      | 21.8M/55.3M [00:02<00:03, 10.2MB/s]Uploading file training_data_clean.jsonl:  42%|████▏     | 23.3M/55.3M [00:02<00:02, 11.2MB/s]Uploading file training_data_clean.jsonl:  45%|████▌     | 25.1M/55.3M [00:02<00:02, 12.0MB/s]Uploading file training_data_clean.jsonl:  48%|████▊     | 26.8M/55.3M [00:02<00:02, 13.3MB/s]Uploading file training_data_clean.jsonl:  51%|█████     | 28.2M/55.3M [00:02<00:02, 11.4MB/s]Uploading file training_data_clean.jsonl:  54%|█████▍    | 29.8M/55.3M [00:02<00:02, 12.0MB/s]Uploading file training_data_clean.jsonl:  57%|█████▋    | 31.8M/55.3M [00:02<00:01, 13.7MB/s]Uploading file training_data_clean.jsonl:  60%|██████    | 33.2M/55.3M [00:03<00:02, 9.31MB/s]Uploading file training_data_clean.jsonl:  63%|██████▎   | 35.1M/55.3M [00:03<00:01, 11.2MB/s]Uploading file training_data_clean.jsonl:  67%|██████▋   | 37.1M/55.3M [00:03<00:01, 13.0MB/s]Uploading file training_data_clean.jsonl:  70%|██████▉   | 38.6M/55.3M [00:03<00:01, 13.2MB/s]Uploading file training_data_clean.jsonl:  73%|███████▎  | 40.1M/55.3M [00:03<00:01, 8.59MB/s]Uploading file training_data_clean.jsonl:  75%|███████▌  | 41.5M/55.3M [00:03<00:01, 9.56MB/s]Uploading file training_data_clean.jsonl:  77%|███████▋  | 42.8M/55.3M [00:04<00:01, 9.35MB/s]Uploading file training_data_clean.jsonl:  79%|███████▉  | 43.9M/55.3M [00:04<00:01, 8.72MB/s]Uploading file training_data_clean.jsonl:  83%|████████▎ | 45.8M/55.3M [00:04<00:00, 10.8MB/s]Uploading file training_data_clean.jsonl:  85%|████████▌ | 47.0M/55.3M [00:04<00:00, 11.2MB/s]Uploading file training_data_clean.jsonl:  87%|████████▋ | 48.3M/55.3M [00:04<00:00, 11.5MB/s]Uploading file training_data_clean.jsonl:  90%|████████▉ | 49.5M/55.3M [00:04<00:00, 6.00MB/s]Uploading file training_data_clean.jsonl:  91%|█████████▏| 50.5M/55.3M [00:05<00:00, 4.81MB/s]Uploading file training_data_clean.jsonl:  94%|█████████▎| 51.8M/55.3M [00:05<00:00, 5.92MB/s]Uploading file training_data_clean.jsonl:  95%|█████████▌| 52.7M/55.3M [00:05<00:00, 6.35MB/s]Uploading file training_data_clean.jsonl:  98%|█████████▊| 54.3M/55.3M [00:05<00:00, 8.14MB/s]Uploading file training_data_clean.jsonl: 100%|██████████| 55.3M/55.3M [00:06<00:00, 8.96MB/s]
+✅ Uploaded! File ID: file-fdb52c9a-14a0-46ee-8389-072f55e9610f
+
+📤 Uploading validation file...
+Uploading file validation_data_clean.jsonl:   0%|          | 0.00/6.23M [00:00<?, ?B/s]Uploading file validation_data_clean.jsonl:  24%|██▍       | 1.49M/6.23M [00:00<00:00, 13.4MB/s]Uploading file validation_data_clean.jsonl:  54%|█████▍    | 3.39M/6.23M [00:00<00:00, 16.1MB/s]Uploading file validation_data_clean.jsonl:  81%|████████  | 5.01M/6.23M [00:00<00:00, 12.3MB/s]Uploading file validation_data_clean.jsonl: 100%|██████████| 6.23M/6.23M [00:00<00:00, 8.33MB/s]
+✅ Uploaded! File ID: file-f86f96be-6b9e-4536-ba29-89c6bebcf3dc
+
+🚀 Starting finetuning job...
+  Model: meta-llama/Meta-Llama-3.1-8B-Instruct-Reference
+  Training file: file-fdb52c9a-14a0-46ee-8389-072f55e9610f
+  Validation file: file-f86f96be-6b9e-4536-ba29-89c6bebcf3dc
+message='Starting from together>=1.3.0, the default batch size is set to the maximum allowed value for each model.'
+message='Starting from together>=1.3.0, the default batch size is set to the maximum allowed value for each model.'
+✅ Job created! Job ID: ft-038a15c4-eb64
+
+📊 Monitor at: https://api.together.xyz/playground/fine-tuning/ft-038a15c4-eb64
+
+💾 Job info saved to: data/together_finetuning_job_info.json
+
+======================================================================
+⏳ Training started (running in background)
+======================================================================
+
+Job ID: ft-038a15c4-eb64
+
+Check status at: https://api.together.xyz/playground/fine-tuning/ft-038a15c4-eb64

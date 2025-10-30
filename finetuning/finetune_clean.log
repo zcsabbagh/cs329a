@@ -1,0 +1,39 @@
+======================================================================
+OpenAI GPT Finetuning (No GPU Required)
+======================================================================
+
+📊 Training Details:
+  Examples: 7367
+  Estimated tokens: 3,683,500
+  Estimated cost: $29.47
+  Model: gpt-4o-mini-2024-07-18
+  Epochs: 3
+
+✅ Auto-proceeding with training (--yes flag set)
+
+📤 Uploading training file...
+✅ Uploaded! File ID: file-4BsUXgMGQ29zW9RLwZBeBg
+
+📤 Uploading training file...
+✅ Uploaded! File ID: file-K4qc5YCbShctS77jBXcXJX
+
+🚀 Starting finetuning job...
+  Model: gpt-4o-mini-2024-07-18
+  Training file: file-4BsUXgMGQ29zW9RLwZBeBg
+  Validation file: file-K4qc5YCbShctS77jBXcXJX
+✅ Job created! Job ID: ftjob-sX1X6Hr8xzsMq055QWyRd1hV
+
+📊 Monitor at: https://platform.openai.com/finetune/ftjob-sX1X6Hr8xzsMq055QWyRd1hV
+
+💾 Job info saved to: data/finetuning_job_info.json
+
+======================================================================
+⏳ Training started (running in background)
+======================================================================
+
+Job ID: ftjob-sX1X6Hr8xzsMq055QWyRd1hV
+
+Check status:
+  python finetune_gpt.py --check-job ftjob-sX1X6Hr8xzsMq055QWyRd1hV
+
+Or visit: https://platform.openai.com/finetune/ftjob-sX1X6Hr8xzsMq055QWyRd1hV

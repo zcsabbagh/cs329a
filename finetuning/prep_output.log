@@ -1,0 +1,28 @@
+📂 Loading trajectories from /Users/irawadee.t/Desktop/classes/ptom-bench/cs329a/business_vacation_traj.jsonl...
+✅ Loaded 2000 trajectories
+
+🔄 Converting trajectories to chatml format...
+✅ Generated 8186 training examples
+
+📊 Split:
+  • Training: 7367 examples
+  • Validation: 819 examples
+
+✅ Training data saved to: /Users/irawadee.t/Desktop/classes/ptom-bench/cs329a/finetuning/data/training_data.jsonl
+✅ Validation data saved to: /Users/irawadee.t/Desktop/classes/ptom-bench/cs329a/finetuning/data/validation_data.jsonl
+
+📊 Statistics:
+
+By strategy type:
+  • alternative_success: 1879 examples (1879 successful, 100.0%)
+  • failed: 1137 examples (3 successful, 0.3%)
+  • information_efficiency: 1829 examples (1765 successful, 96.5%)
+  • optimal: 1293 examples (1293 successful, 100.0%)
+  • recovery: 2048 examples (2043 successful, 99.8%)
+
+======================================================================
+✅ Data preparation complete!
+======================================================================
+
+Next step:
+  python finetune_llama.py --train-data /Users/irawadee.t/Desktop/classes/ptom-bench/cs329a/finetuning/data/training_data.jsonl

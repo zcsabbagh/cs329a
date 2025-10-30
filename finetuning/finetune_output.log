@@ -1,0 +1,17 @@
+======================================================================
+OpenAI GPT Finetuning (No GPU Required)
+======================================================================
+
+📊 Training Details:
+  Examples: 7367
+  Estimated tokens: 3,683,500
+  Estimated cost: $29.47
+  Model: gpt-4o-mini-2024-07-18
+  Epochs: 3
+
+⚠️  Proceed with training? (yes/no): Traceback (most recent call last):
+  File "/Users/irawadee.t/Desktop/classes/ptom-bench/cs329a/finetuning/finetune_gpt.py", line 357, in <module>
+    main()
+  File "/Users/irawadee.t/Desktop/classes/ptom-bench/cs329a/finetuning/finetune_gpt.py", line 274, in main
+    response = input(f"\n⚠️  Proceed with training? (yes/no): ")
+EOFError: EOF when reading a line

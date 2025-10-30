@@ -1,0 +1,411 @@
+{
+  "results": [
+    {
+      "scenario_id": "scenario_218",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_248",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_219",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_215",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_247",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_216",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_250",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_217",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_249",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_246",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_220",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_251",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_222",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_221",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_252",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_253",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_224",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_255",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_223",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_254",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_256",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_225",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_226",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_257",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_258",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_228",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_227",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_229",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_259",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_260",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_230",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_231",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_261",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_262",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_263",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_232",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_233",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_264",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_234",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_265",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_266",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_236",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_235",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_267",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_237",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_268",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_238",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_269",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_270",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    },
+    {
+      "scenario_id": "scenario_239",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    }
+  ],
+  "statistics": {
+    "success_rate": 0.0,
+    "num_successes": 0,
+    "num_total": 50,
+    "avg_turns": 0,
+    "avg_satisfaction": 0.0
+  }
+}

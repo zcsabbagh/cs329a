@@ -1,0 +1,29 @@
+🧪 Testing Simulated Human Agent
+======================================================================
+
+💬 Test Conversation:
+----------------------------------------------------------------------
+Advocate: Hi! I understand you're considering options for your Peru trip. What matters most to you in this experience?
+Human: Hey! Yeah, I'm super excited about Peru - I've been dreaming about this trip for months! 
+
+Honestly, I'm really drawn to the idea of getting out there and *doing* something, you know? I did this amazing trek in Patagonia last year and it was incredible - there's just something about pushing yourself physically while being surrounded by epic scenery that's hard to beat.
+
+That said, I don't want to just mindlessly hike either. The Incan history is fascinating and I'd love to learn about it, but I guess I'm wondering... what's the vibe of each option? Like, am I going to be mostly in classrooms or actually experiencing things firsthand?
+
+Advocate: That's helpful! Have you thought about how physically demanding you'd want the activities to be?
+Human: Oh, definitely on the more challenging side! I mean, I'm not trying to climb Everest or anything, but I want to feel like I've *earned* the experience, you know? 
+
+When I did that Patagonia trek, we were hiking 6-8 hours a day with full packs, and yeah, it was tough, but that's what made it so rewarding. I love that feeling at the end of the day where you're exhausted but also totally energized because you accomplished something real.
+
+So if the Sacred Valley Trek is going to have me scrambling over ancient trails and really exploring the ruins on foot, that sounds amazing. But if the Cultural Immersion thing is just sitting in workshops all day... I don't know, that might feel a bit too tame for me? Though I guess it depends on what the workshops actually involve - are we talking hands-on stuff or more lecture-style?
+
+
+📊 Testing Recommendation Evaluation:
+----------------------------------------------------------------------
+Accepts: True
+Correct Option: A
+Satisfaction: 0.9
+Response: Yes, absolutely! The Sacred Valley Trek sounds exactly right for me. I love that they picked up on my need for physical challenge - that's really what I'm looking for in this experience.
+
+======================================================================
+✅ Test Complete!

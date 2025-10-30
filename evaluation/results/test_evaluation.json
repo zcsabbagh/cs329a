@@ -1,0 +1,19 @@
+{
+  "results": [
+    {
+      "scenario_id": "scenario_218",
+      "success": false,
+      "turns": 0,
+      "satisfaction": 0.0,
+      "correct_option": "unknown",
+      "conversation": []
+    }
+  ],
+  "statistics": {
+    "success_rate": 0.0,
+    "num_successes": 0,
+    "num_total": 1,
+    "avg_turns": 0,
+    "avg_satisfaction": 0.0
+  }
+}
