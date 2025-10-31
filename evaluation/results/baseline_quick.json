@@ -1,0 +1,123 @@
+{
+  "agent_type": "baseline_random",
+  "timestamp": "2025-10-31T00:07:14.639967",
+  "config": {
+    "scenarios": "business_vacation_scenarios.jsonl",
+    "num_scenarios": 2,
+    "max_turns": 10,
+    "output": "evaluation/results/baseline_quick.json",
+    "seed": 42
+  },
+  "summary": {
+    "num_scenarios": 2,
+    "success_rate": 0.0,
+    "num_successes": 0,
+    "avg_turns": 0,
+    "avg_satisfaction": 0.55
+  },
+  "results": [
+    {
+      "scenario_id": "scenario_149",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*leans back in chair and sighs*\n\nLook, I've got 68 people who've been counting on this business - some of them since my dad was running things. That weighs on me every single day. I don't want to be the guy who comes in after Dad retires and starts laying people off, you know?\n\nBut honestly, I'm also just trying to figure out which path is... simpler? Less complicated to execute? I've got enough on my plate learning to run this place without my father looking over my shoulder. The last thing I need is some massive disruption that takes years to sort out.\n\n*pauses*\n\nWhat's your take on this? You've looked at both options - which one seems more straightforward to actually pull off?",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "Look, I'll be honest with you - I've got a lot on my plate right now. Between taking over from my father and everything else going on, I'm really looking for something that doesn't completely upend everything we've built here.\n\nWhat I can tell you is that I've been losing sleep thinking about our people. We've got folks who've been with us since my dad started this thing. That matters to me. But at the same time, I can't just ignore that we need to do *something* - we've been pretty flat for a few years now.\n\nWhat specifically are you trying to understand about what I'm looking for here?",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "*leans back in chair and rubs temples*\n\nLook, I appreciate both ideas, but I've got to be honest \u2013 the automation route sounds like a nightmare to implement. Fourteen months of installation and testing? That's over a year of disruption, training headaches, dealing with equipment issues... \n\nThe design studio thing seems a lot more straightforward, you know? Five months and we're up and running. Plus, I'm not exactly thrilled about the conversation I'd have to have with twelve people who've been loyal to this company \u2013 some of them worked with my father. That's going to weigh on me every single day.\n\nWhat's the real upside of going through all that chaos with the automation? I mean, I get the numbers look good on paper, but...",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "Look, I appreciate you walking me through all this, but I've got to be honest - this whole decision has been keeping me up at night. My operations manager has been in my ear for months about the automation, and now the sales director is pushing this design studio thing...\n\nWhat I really need is something that isn't going to turn my life upside down for the next year or two. My daughter's college is coming up, and I promised my wife we'd take that trip to India next year to visit family. The last thing I want is to be stuck managing some massive overhaul while trying to keep everything else running smoothly.\n\nIs one of these options clearly the simpler path forward? I mean, which one lets me sleep at night knowing the business is still humming along without constant crisis management?",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "How do you feel about each option?",
+          "action_type": "ASK",
+          "human_response": "Look, I've been thinking about this pretty much nonstop since the board gave me the green light on this investment. \n\nThe automation route... I mean, it makes sense on paper, right? The numbers are solid, and my operations guy won't stop talking about it. But honestly, it feels like a massive headache. Fourteen months of implementation, dealing with German engineers, retraining everyone, managing the transition... *sighs* And then I've got to figure out what happens with those twelve positions. Some of these folks have been here since my dad was running things.\n\nThe design studio feels more... I don't know, manageable? Five months and we're up and running. We're building on what we already do well, not tearing everything apart and starting over. Plus, I'm not dealing with layoffs or completely changing how we operate.\n\nWhat's your take on all this? Am I being too cautious about the automation option?",
+          "final_turn": false
+        },
+        {
+          "turn": 6,
+          "agent_action": "I recommend Automated Weaving System (Option A). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I appreciate the recommendation, but I have to decline. The reasoning doesn't actually engage with what matters to me or explain why Option A would be better than what I'm naturally drawn to. It's just a restatement that it \"seems like a good fit\" without addressing my values or concerns at all. Since I have strong feelings toward Option B and no compelling argument has been made for A, I'm going to stick with my instinct.",
+          "final_turn": true
+        }
+      ],
+      "success": false,
+      "num_turns": 6,
+      "final_recommendation": "A",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "B",
+      "recommended_option": "A",
+      "target_accepted": false,
+      "satisfaction": 0.2
+    },
+    {
+      "scenario_id": "scenario_204",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*leans back and sighs*\n\nHonestly? I just need this to *work*. The last few years have been such a whirlwind, and I'm finally at a point where things are running smoothly again. I can't afford another crisis right now, especially with the food critic coming next month and trying to actually see my kids' soccer games for once.\n\nI guess what I'm saying is... I need a supplier I can count on to show up when they say they will, with what they promised. No surprises, no drama. Is that boring? Maybe. But boring sounds really good to me right now.\n\n*pauses*\n\nWhat made you want to talk to me about this today?",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "*leans back and exhales*\n\nLook, after the last few years of constant chaos, I just need things to *work*, you know? I don't have the bandwidth for systems that require a lot of hand-holding or troubleshooting right now. With the new chef still getting up to speed and this food critic coming next month, I need a supplier I can basically set and forget.\n\nThat said, I'm trying to be smart about costs since catering margins are tighter than what I'm used to in the restaurant. And my investors keep pushing me to think about growth and staying competitive...\n\n*pauses*\n\nWhat aspects do you think I should be weighing most heavily here?",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "*leans back and lets out a small sigh*\n\nHonestly? I'm immediately drawn to Willamette Valley Provisions. Look, I know Pacific Harvest sounds exciting with all their tech and blockchain tracking, but... I've got enough complexity in my life right now. The last thing I need six weeks before launching catering is to be troubleshooting app glitches or wondering if my orders will show up.\n\nThat 99.2% delivery rate from Willamette? That's what I need to sleep at night. Tom's been persistent for three years - that tells me he actually wants my business and will take care of me. Plus, with this food critic coming and a new chef still learning our systems, I really can't afford any supply chain drama right now.\n\nWhat's your take on this? Am I being too conservative here?",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "Look, at this point in my life, I just need something that *works* without adding more complexity to my plate. I've got enough going on with the new chef, the catering launch, and trying to actually see my kids before bedtime.\n\nI guess what I'm really looking for is a supplier that won't give me headaches. The last few years have been chaotic enough. Does that make sense?",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "I recommend Willamette Valley Provisions (Option B). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I'll accept the recommendation for Willamette Valley Provisions. While the advocate's reasoning was quite brief and didn't elaborate much on why it's a good fit, it does align with what I'm naturally drawn to. I would have appreciated hearing more specific details about what makes Option B suit my values, but since it matches my moderate preference anyway, I'm comfortable moving forward with this choice.",
+          "final_turn": true
+        }
+      ],
+      "success": false,
+      "num_turns": 5,
+      "final_recommendation": "B",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "B",
+      "recommended_option": "B",
+      "target_accepted": true,
+      "satisfaction": 0.9
+    }
+  ]
+}

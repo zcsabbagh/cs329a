@@ -15,10 +15,6 @@ venv/
 # Logs
 *.log
 
-# Results (optional - comment out if you want to commit results)
-evaluation/results/*.json
-finetuning/data/*.jsonl
-
 # IDE
 .vscode/
 .idea/

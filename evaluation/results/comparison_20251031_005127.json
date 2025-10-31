@@ -1,0 +1,24 @@
+{
+  "timestamp": "2025-10-31T01:19:59.572187",
+  "baseline_file": "evaluation/results/baseline_fair_comparison_20251031_005127.json",
+  "finetuned_file": "evaluation/results/finetuned_fair_comparison_20251031_005127.json",
+  "baseline_statistics": {
+    "success_rate": 0.12,
+    "num_successes": 3,
+    "num_total": 25,
+    "avg_turns": 5.666666666666667,
+    "avg_satisfaction": 0.452
+  },
+  "finetuned_statistics": {
+    "success_rate": 0.08,
+    "num_successes": 2,
+    "num_total": 25,
+    "avg_turns": 2.5,
+    "avg_satisfaction": 0.256
+  },
+  "comparison": {
+    "success_rate_improvement": -4.0,
+    "baseline_success_rate": 12.0,
+    "finetuned_success_rate": 8.0
+  }
+}

@@ -1,0 +1,1330 @@
+{
+  "timestamp": "2025-10-31T01:09:37.748886",
+  "config": {
+    "num_scenarios": 25,
+    "seed": 42,
+    "scenarios_file": "business_vacation_scenarios.jsonl"
+  },
+  "agent_type": "baseline_random",
+  "results": [
+    {
+      "scenario_id": "scenario_320",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*pauses, running hand through hair*\n\nHonestly? I'm not entirely sure anymore, and that's part of the problem. \n\nI mean, on paper, I should want the cultural immersion thing\u2014it's organized, educational, I'd learn something. That's very... me. Or at least, the me I've always been. But I keep thinking about what my therapist said about reconnecting with spontaneity, and what my ex-wife said about being boring. *winces slightly* That still gets under my skin.\n\nI guess what I'm trying to figure out is whether I actually need to push myself out of my comfort zone\u2014like, really push myself\u2014or if that's just me trying to prove something. I've spent the last year buried in pharmaceutical patent litigation. I'm exhausted. But I'm also... restless? Does that make sense?\n\nWhat would you want to know about me to help figure this out?",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "*shifts in seat, looking a bit uncertain*\n\nHonestly, I'm not entirely sure anymore\u2014that's part of why I reached out. I know I need a break from the intensity of work, but I keep going back and forth on what that should look like. Part of me thinks I should do something... different? Maybe push myself outside my comfort zone for once? My ex wasn't wrong about the predictable thing, and I keep wondering if I'm missing out on experiences that could actually be meaningful.\n\nBut at the same time, I've got this voice in my head saying that adventure stuff is for people in their twenties, not middle-aged attorneys who haven't seen the inside of a gym in six months. And honestly, I've always gotten more satisfaction from really understanding a place\u2014its history, its culture\u2014rather than just... doing activities, I guess?\n\n*pauses*\n\nWhat do people usually prioritize when they're trying to figure out what they actually need from a trip?",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "*shifts in seat, looking a bit uncertain*\n\nHonestly? My first instinct is the Lisbon option\u2014it's got everything planned out, I can see exactly what I'm getting for my money, and the cultural depth really appeals to me. I've always been interested in Portuguese history, and those fado lessons sound incredible.\n\nBut... *pauses, rubbing the back of neck* ...that's exactly the kind of thing my ex would say I'd pick, isn't it? The safe choice. All structured and predictable. And I keep thinking about what my therapist said about spontaneity. The Algarve thing is so far outside my comfort zone\u2014I haven't done anything like cliff jumping since college. Part of me wonders if that's exactly what I need right now.\n\nThough I have to say, $2,200 versus $2,850 is a pretty significant difference. That's money I could save or use for something else. What do you think someone in my situation actually needs?",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "*leans back slightly, running hand through hair*\n\nHonestly? I'm not entirely sure anymore. I know that sounds ridiculous coming from someone who's built a career on analyzing every detail, but... I think that's part of the problem. I've spent the last year buried in pharmaceutical patent disputes, and before that, it was always about being the responsible one\u2014the planner, the safe choice. My therapist thinks I need to reconnect with spontaneity, whatever that means.\n\n*pauses, looking a bit uncomfortable*\n\nLook, I've got a decent budget set aside\u2014$3,500\u2014but I've never been great at spending money on myself. Part of me wants something that feels... I don't know, alive? Different? But I also don't want to end up in some situation where I'm completely out of my depth and miserable. I guess I'm looking for something that doesn't feel like just another carefully controlled experience, but I'm also aware that I tend to overthink myself into paralysis.\n\nWhat would you actually recommend for someone in my situation?",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "I recommend Lisbon Cultural Immersion Experience (Option A). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I appreciate the recommendation, but I'm going to go with Option B - the Thailand Adventure Trek. You mentioned it seems like a good fit, but honestly the reasoning feels a bit generic and doesn't really address what I told you matters most to me - I'm really drawn to that adventurous, active experience and the significantly lower cost of the Thailand option. The cultural immersion in Lisbon sounds nice, but it's not quite what I'm looking for right now.",
+          "final_turn": true
+        }
+      ],
+      "success": false,
+      "num_turns": 5,
+      "final_recommendation": "A",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "B",
+      "recommended_option": "A",
+      "target_accepted": false,
+      "satisfaction": 0.2
+    },
+    {
+      "scenario_id": "scenario_244",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*leans back in chair, rubbing temples*\n\nHonestly? I need something that's actually going to work when we need it. I've watched two buddies nearly tank their businesses because they got sold on flashy software that crashed during their peak seasons or required constant tech support calls. \n\nWhat keeps me up at night is losing that Whole Foods contract\u2014or worse, losing Sarah, my operations manager. She's been with me for seven years and knows this business inside and out. But I'm also terrified of dropping forty grand on something that becomes a nightmare to maintain or forces us to completely change how we operate.\n\nI built this company on being reliable and delivering quality. Whatever system we choose needs to support that, not become another problem I'm managing. Does that make sense?",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "Look, I appreciate you asking. The biggest thing for me is that whatever we choose actually *works*. I can't afford another mess\u2014I've watched friends lose months of productivity and serious money on software that promised the world but couldn't deliver the basics.\n\nBeyond that, yeah, I'm watching costs. We're profitable, but $42K versus $28K is real money when you're talking about something that needs to work year after year. And honestly? I've built this company on relationships and knowing my business inside and out. I'm not against new technology, but I need something my team can actually use without turning into full-time IT people.\n\nWhat's your take on these options?",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "*leans back in chair, rubbing temples*\n\nHonestly? I'm feeling the pressure here. My ops manager is already fed up with our current system\u2014or lack of one\u2014and these Whole Foods contracts are huge for us, but they're not going to wait around if we can't deliver consistently.\n\nMy gut keeps pulling me toward ReliableChain Pro. The shorter implementation timeline is really appealing because we've got fall season coming up, and I can't afford months of disruption when we're trying to nail these new contracts. Plus, I've heard horror stories from other business owners about fancy new systems that promise the world but end up creating chaos for months.\n\nBut then I worry\u2014am I being too conservative? The SupplyFlow360 has all these advanced features, and maybe that's what we need to really scale up. I just... I don't know if we need IoT sensors and AI predictions, or if we just need something solid that works every single day without breaking. What do you think I should be prioritizing here?",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "You know, I appreciate you asking that. Honestly, what keeps me up at night is making sure this doesn't blow up in my face. I've seen what happens when systems fail\u2014my buddy lost a major client because his new software crashed during their busiest month. \n\nI guess what I'm really looking for is something that's going to work consistently, day in and day out. I can't afford to have my operations manager or those Whole Foods buyers calling me because orders got lost in some glitchy system. And if I'm being totally honest, I don't want something so complicated that my team spends more time fighting with the software than actually doing their jobs. Does that make sense?",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "I recommend ReliableChain Pro (Option B). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I appreciate the recommendation, but honestly, this feels pretty generic. You said it \"seems like a good fit\" but didn't really explain *why* it fits what I told you matters to me - like how it addresses my reliability concerns specifically or whether the higher cost is actually worth it for my situation. Can you help me understand what makes this the right choice for me?",
+          "final_turn": true
+        }
+      ],
+      "success": false,
+      "num_turns": 5,
+      "final_recommendation": "B",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "B",
+      "recommended_option": "B",
+      "target_accepted": true,
+      "satisfaction": 0.9
+    },
+    {
+      "scenario_id": "scenario_222",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*pauses thoughtfully*\n\nHonestly? I think what I'm most worried about is feeling isolated. This is my first big conference in a while, and I really need to make connections\u2014not just professionally, but... you know, just feeling like I'm part of things again. After everything with the divorce and caring for Mom, I've been pretty disconnected from the field.\n\nBut at the same time, I don't want to blow through money unnecessarily. The grant covers most of it, but going significantly over feels irresponsible, especially when I'm still rebuilding financially.\n\nI guess I'm trying to figure out if staying where everyone else is actually matters as much as people say it does? Like, will I miss out on important conversations if I'm not right there? Or is that just conference culture hype?\n\n*shifts uncomfortably*\n\nWhat's your take on this?",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "I appreciate you asking. *pauses thoughtfully* \n\nHonestly, I'm feeling a bit torn about this whole trip. Part of me knows I should be practical\u2014the grant doesn't quite cover the nicer option, and I've been pretty careful with money since the divorce. But at the same time, this conference feels really important for getting back into the professional groove, you know? I've been out of the loop for a while caring for my mom, and I'm honestly a little anxious about the networking side of things.\n\nI guess what I'm trying to figure out is whether being right there with everyone else would actually help me feel more confident and connected, or if I'm just overthinking it. What's your initial sense of these options?",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "I appreciate you asking what I think first. *pauses to consider* \n\nHonestly, I'm feeling pretty torn. The practical side of me is immediately drawn to that Plaka apartment\u2014the price difference is significant, and I could use those savings. Plus, there's something appealing about being in a real neighborhood rather than the tourist bubble. But then... *hesitates* ...I'm also nervous about being so far from the conference center. This is my first big professional event in a while, and I'm already anxious about the networking aspect. I keep wondering if staying where everyone else is would make it easier to connect with colleagues, especially for those spontaneous dinner plans or morning coffee meetups that seem to happen at conferences.\n\nWhat's your take? Am I overthinking the distance factor, or is being close to the action actually as important as some people say?",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "I appreciate you asking! Honestly, I'm feeling a bit torn about this whole trip. It's my first big conference in a while, and I want to make sure I'm setting myself up for success\u2014both professionally and personally. \n\nI guess what matters most is that I don't want to feel isolated or like I'm missing out on important networking opportunities, especially since I'm trying to rebuild those connections. At the same time, I've always been someone who gets excited about really experiencing a place, you know? Not just the conference center bubble. \n\nWhat's your take on how these two options might work for someone in my situation?",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "How do you feel about each option?",
+          "action_type": "ASK",
+          "human_response": "I appreciate you asking what I think! Honestly, I'm feeling pretty torn about this.\n\nThe Athenian Grand is tempting because it just seems... easier? I'm already anxious about putting myself out there professionally after being away from conferences for a while, and the idea of being right there with everyone else is comforting. I won't have to worry about commuting when I'm already exhausted from networking all day. But $1,560 feels like a lot, especially when I could save almost half by going with the Plaka apartment.\n\nThe Plaka place sounds lovely and authentic - I mean, Acropolis views and a local neighborhood? That's the kind of experience I'd normally jump at. But I keep wondering if I'll regret being so far from everything when I'm tired and just want to collapse, or if I'll miss out on those spontaneous dinner invitations because I'm not staying where everyone else is. This conference really matters for rebuilding my network, and I'm worried about making the wrong choice and feeling even more isolated.\n\nWhat's your take on this? Am I overthinking it?",
+          "final_turn": false
+        },
+        {
+          "turn": 6,
+          "agent_action": "I recommend Plaka Heritage Apartment (Option B). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I'll go with Option B then. Though honestly, you didn't really explain *why* it's a good fit - like, is it because it's more affordable, or the location works better for what I want to do? I was already leaning that way anyway, so I'm fine with it, but I would have liked to hear more about your actual reasoning.",
+          "final_turn": true
+        }
+      ],
+      "success": false,
+      "num_turns": 6,
+      "final_recommendation": "B",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "B",
+      "recommended_option": "B",
+      "target_accepted": true,
+      "satisfaction": 0.9
+    },
+    {
+      "scenario_id": "scenario_395",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*leans back in chair, exhaling slowly*\n\nThat's... actually the question that's been keeping me up at night. Look, I've got 47 people depending on this company for their livelihoods, and my parents built this business from nothing. I can't afford to make a reckless choice that puts all of that at risk.\n\nWhat really weighs on me is this contract renegotiation in four months. If I lose that grocery chain account, we're in serious trouble. And Angela's right to be concerned - we've got our daughter's tuition coming up, and I'm not about to bet the farm on something that might not pan out.\n\n*pauses, rubbing temple*\n\nI guess what matters most is making sure we're still standing in five years, that we can actually deliver on whatever promises I make. I've seen too many businesses in our industry take big swings and strike out. But I also know we can't just stand still and hope things work out.",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "*leans back in chair, crossing arms thoughtfully*\n\nWell, the biggest thing on my mind is that grocery chain contract coming up in four months. We can't afford to lose that account - they represent about 18% of our revenue. But beyond that immediate pressure, I'm really thinking about stability. My parents built this business from nothing, and I have 47 people depending on us, some who've been with the company since the beginning.\n\n*pauses, glancing at a family photo on the desk*\n\nAngela and I are also carrying a lot right now - mortgage, our daughter starting college next year. The idea of taking on major debt or gambling on something completely unproven... that keeps me up at night. I need to make sure whatever we do actually works, you know? I can't risk everything my parents built on some trend that might not pan out.\n\nWhat specific aspect are you most curious about? I'm trying to balance a lot of competing pressures here.",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "*leans back in chair, exhaling slowly*\n\nHonestly? I'm feeling pretty torn. On one hand, I saw what some of our competitors are doing with direct-to-consumer at that conference, and there's clearly money being made there. On the other hand, Rita's been telling me for two years that our refrigeration system is living on borrowed time, and I keep putting it off. \n\nWhat's really keeping me up at night is that contract renegotiation in four months. We need to be able to come to the table with something \u2013 either lower prices from better efficiency, or proof that we're evolving with the market. Angela's already stressed about our financial position, and I just... I can't afford to bet wrong on this.\n\n*pauses, rubbing temples*\n\nThe e-commerce thing feels exciting but honestly a bit scary. That's a lot of money on something we've never done before. But the infrastructure upgrade feels safe, maybe too safe? I don't know if \"safe\" is enough anymore when the whole industry is changing. What's your take?",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "I appreciate you asking. Honestly, I'm trying to figure out what makes the most sense for where we are right now. We've got this contract renegotiation coming up in four months with our biggest client, and they're already talking about needing better pricing. That's keeping me up at night.\n\nWhat I really need is to understand how either of these options helps me keep the business stable while also positioning us for the future. My parents built something solid here, and I've got 47 people counting on me to make the right call. Plus, Angela's worried about taking on too much risk with our daughter heading to college soon.\n\nI guess I'm looking for something that doesn't feel like I'm gambling with everything we've built, but also doesn't leave us falling behind while our competitors move forward. Does that make sense?",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "I recommend Wholesale Infrastructure Modernization (Option B). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I'll go with Option B, but honestly, I'm a bit surprised by how generic that reasoning was. You're recommending the option I was already leaning toward, but you didn't really engage with *why* it fits me - like how it addresses my concerns about risk and timeline, or why the higher cost is worth it given what I value. I'm accepting because it matches my instinct, but a bit more specific reasoning would've made me feel more confident in the decision.",
+          "final_turn": true
+        }
+      ],
+      "success": false,
+      "num_turns": 5,
+      "final_recommendation": "B",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "B",
+      "recommended_option": "B",
+      "target_accepted": true,
+      "satisfaction": 0.9
+    },
+    {
+      "scenario_id": "scenario_109",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*leans forward slightly, looking thoughtful*\n\nHonestly? I need to make sure I'm not blowing my budget here. I've been really careful saving up for this trip, and I'm still getting back on my feet financially after the divorce. The last thing I need is to overspend and stress about money for the next six months.\n\nBut beyond that... *pauses* ...I really want this to work well for the girls. Sofia doesn't do great in huge crowds\u2014she gets overwhelmed and kind of shuts down. And I know Emma's going to want good photos for her Instagram, but I'm not sure what makes for \"good\" lighting in her mind. I just don't want us fighting through massive tourist crowds the whole time and having the girls miserable. Does that make sense?",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "Thanks for asking. I think what's really important to me here is making sure we get good value - I've been saving for this trip for a year and a half, and I need to be smart about how I spend it. I can't just throw money around carelessly.\n\nI'm also thinking about Sofia - she really doesn't do well in massive crowds. Last time we went to a big theme park, she got pretty overwhelmed and it kind of put a damper on the day. I want both girls to actually enjoy themselves, you know?\n\nAnd honestly, the weather matters. I mean, we're going to Greece - I want it to feel like a real Mediterranean experience with good conditions for the beach and sightseeing. Emma's really into her photography too, so lighting and scenery are going to be part of how she remembers this trip.\n\nWhat are your thoughts on the timing?",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "*leans back and runs hand through hair*\n\nHonestly? I'm feeling a bit torn here. That $8,900 price tag for August is making me nervous\u2014I mean, I've been putting money aside for a year and a half, and going over budget by dipping into emergency savings doesn't sit right with me. That's exactly the kind of financial stress I've been trying to avoid since the divorce.\n\nBut at the same time... *pauses* ...the girls are going to want that \"perfect Greece experience,\" you know? Warm water, guaranteed sunshine, that whole Mediterranean summer vibe. Emma's going to be comparing her photos to what her friends post, and Sofia\u2014well, I just want them to have fun. I guess I'm wondering if the May option would feel like we're settling for second-best, or if it's actually the smarter choice and I'm just overthinking this.\n\nWhat's your take? Am I being too worried about the money, or is that a legitimate concern here?",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "Look, I appreciate you asking. Honestly, I'm trying to keep this straightforward without overthinking it. The whole planning process has been a bit stressful, and I just want something that works well for everyone without adding unnecessary complications.\n\nI guess what matters most is not blowing through my budget\u2014I've been really careful saving for this, and going over feels irresponsible. Beyond that, Sofia gets pretty overwhelmed in crazy crowded situations, so I'm trying to avoid anything that'll make her uncomfortable. And Emma's really into her photography, so decent lighting would be nice for her.\n\nWhat are you thinking in terms of timing?",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "I recommend Mid-August Departure (August 10-24) (Option B). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I appreciate the recommendation, but I'm going to stick with Option A. You mentioned this \"seems like a good fit,\" but you didn't really explain why given that I emphasized wanting to save money and avoid crowds - both of which would be better with the early June option. I need to understand what makes the higher cost and busier period worth it for my specific situation.",
+          "final_turn": true
+        }
+      ],
+      "success": false,
+      "num_turns": 5,
+      "final_recommendation": "B",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "A",
+      "recommended_option": "B",
+      "target_accepted": false,
+      "satisfaction": 0.2
+    },
+    {
+      "scenario_id": "scenario_102",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*leans back in chair, arms crossed thoughtfully*\n\nYou know, that's actually the question that's been keeping me up at night. I think what I keep coming back to is... I can't afford to make a mistake here. I've got college tuitions, a loan I'm still paying down, and honestly, after watching my mentor lose a substantial amount on that healthcare tech investment last year, I'm feeling the weight of this decision more than I'd like to admit.\n\nBut at the same time, I'm watching these other clinics in the area expand and modernize, and I worry about falling behind. My patients have been loyal, but loyalty only goes so far when someone else is offering more convenient options, right? \n\nI guess what matters most is making a choice I can actually feel confident about - something where I understand what I'm getting into, where the path forward is clear enough that I can sleep at night. Does that make sense?",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "You know, that's a good question to start with. I appreciate you asking rather than just jumping into a pitch.\n\nHonestly, I'm feeling a bit torn here. Part of me is excited about pushing the practice forward \u2013 I didn't build this clinic to play it safe forever. But I also can't ignore that I've got real responsibilities: two kids in college, a loan I'm still paying down, and 3,500 patients counting on me to keep their care stable. My mentor's recent loss in that healthcare tech venture has been on my mind more than I'd like to admit.\n\nWhat's really keeping me up at night is watching these other clinics around me expand while I'm stuck in analysis paralysis. I need to move, but I need to move smart. Does that make sense?",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "*leans back thoughtfully, a slight crease of concern crossing my brow*\n\nHonestly? I'm feeling pulled in two directions. The physical therapy expansion feels... safer, I guess? We're already sending those 180 patients elsewhere, so we know the demand exists. I hate watching that revenue walk out the door, and my senior NP has been bringing it up for months based on what patients are actually asking for.\n\nBut then I see these other clinics adding telehealth and I worry we're going to look outdated if we don't keep up. My practice manager keeps showing me articles about how this is \"the future of healthcare.\" I just... *pauses, fidgeting with a pen* ...I keep thinking about my mentor's situation. She was so sure about that healthcare tech investment, and it completely fell apart. The telehealth numbers look good on paper, but \"28-35% ROI potential\" and \"uncertain adoption rates\" in the same sentence makes my stomach knot up a bit.\n\nWhat's your take? Which direction do you think makes more sense for where I am right now?",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "I appreciate you asking. Honestly, I'm trying to figure out what makes the most sense for where my practice is right now. I've got this capital sitting there, and I know I need to do *something* - my competitors aren't standing still - but I also can't afford to make a mistake that puts my clinic at risk. \n\nWhat's weighing on me is that I've got real financial responsibilities - two kids in college, the original loan payments - so I need this investment to actually work. At the same time, I'm watching other clinics expand and I worry about losing patients if I don't keep up. I guess I'm looking for something that moves us forward but doesn't feel like I'm gambling with everything I've built.",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "How do you feel about each option?",
+          "action_type": "ASK",
+          "human_response": "You know, I'm genuinely torn here. The physical therapy expansion feels... safe. I can see the numbers, we already have the patient demand, and it's proven to work for practices like mine. That predictability is really appealing given everything on my plate right now.\n\nBut honestly? The telehealth option excites me more. It feels like the future of medicine, and I hate the thought of being left behind while my competitors move forward. I'm watching these other clinics innovate, and part of me worries that playing it safe means slowly losing ground.\n\nThe thing that keeps me up at night though is that $88,000 price tag with \"uncertain adoption rates.\" My mentor's tech venture disaster is still fresh in my mind. But then again, what if telehealth becomes the standard and I'm scrambling to catch up two years from now?\n\nWhat's your take? I feel like I'm weighing my gut instinct against what the data says is sensible.",
+          "final_turn": false
+        },
+        {
+          "turn": 6,
+          "agent_action": "I recommend Physical Therapy Department Expansion (Option B). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I appreciate the recommendation, but honestly, that reasoning feels pretty thin. You're telling me it \"seems like a good fit\" but not explaining *why* based on what I actually told you about wanting moderate returns with manageable risk. Can you help me understand how the PT expansion specifically addresses those priorities compared to the other options?",
+          "final_turn": true
+        }
+      ],
+      "success": false,
+      "num_turns": 6,
+      "final_recommendation": "B",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "B",
+      "recommended_option": "B",
+      "target_accepted": false,
+      "satisfaction": 0.2
+    },
+    {
+      "scenario_id": "scenario_157",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*leans back in chair, crossing arms thoughtfully*\n\nWell, the CFO's been pretty clear that we can't blow the budget on this\u2014every dollar counts when you're trying to grow without jeopardizing stability. I learned that lesson early from my parents' restaurant. But honestly, I'm also thinking about the bigger picture here. \n\nWe've watched Arizona MedTech eat our lunch after they moved closer to the hospital networks, and that keeps me up at night. I need to know this decision will actually position us for growth, not just save us money in the short term. What's your take on balancing those priorities?\n\n*taps fingers on desk, clearly engaged but a bit cautious*",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "Thanks for asking. Look, the board has made it crystal clear that we need to keep costs under control\u2014we've finally got the green light for this move, but the budget is tight and I can't afford to blow it. Coming from a family business background, I've seen firsthand how quickly overhead can eat into your margins, so that's definitely on my mind.\n\nBut here's the thing\u2014I'm also watching what's happening in the market. Arizona MedTech moved closer to the hospital networks a few years back and they've been eating our lunch ever since. And Jennifer, my logistics director, won't stop talking about how we need better highway access for our delivery routes. \n\nWhat's your take on how to balance these things? I feel like every option has tradeoffs and I'm trying to figure out what matters most for the next decade.",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "Looking at these two options, I'm honestly feeling a bit torn. The West Phoenix Industrial Park jumps out at me immediately because of that lease price - $16,800 versus $28,500 is a significant difference, especially when the CFO's breathing down my neck about the budget. And with eight loading docks and direct Interstate 10 access, Jennifer would be thrilled. That's exactly what she's been pushing for.\n\nBut here's what's nagging at me - I keep thinking about Arizona MedTech and how they grew after moving closer to the hospital networks. The Downtown Medical District puts us right in the middle of our clients, which feels strategically smart. Plus, I have to admit, we've been hemorrhaging some good people lately, and I wonder if a more attractive location might help with that retention problem.\n\nThe commute times from the West location are concerning though - adding 35-50 minutes to delivery routes could really add up in fuel costs and driver time. I'm trying to figure out if the lower rent would actually offset those operational expenses, or if we'd just be trading one cost for another. What's your take on this?",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "Look, I appreciate you asking. The truth is, this decision is keeping me up at night. We've been in our current cramped space for 8 years, and this move needs to set us up for the next decade\u2014there's no room for error with the budget we've got.\n\nWhat's really weighing on me is the cost side of things. Coming from a family restaurant business, I've seen firsthand how overhead can kill you if you're not careful. The CFO has made it crystal clear\u2014we can't afford mistakes here. But at the same time, I keep thinking about Arizona MedTech and how they doubled their market share after moving closer to the downtown hospital networks. That's hard to ignore.\n\nI guess what I'm looking for is a way to make a smart financial decision that doesn't box us in strategically. Does that make sense? What's your take on these two options?",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "How do you feel about each option?",
+          "action_type": "ASK",
+          "human_response": "Looking at these two options, I'm honestly feeling pretty torn. \n\nThe West Phoenix Industrial Park immediately catches my eye because that $16,800 lease versus $28,500 downtown is a huge difference\u2014we're talking almost $140,000 saved annually. Growing up in my family's restaurant, I learned the hard way that overhead costs can kill you, and our CFO has made it crystal clear we can't afford to overspend here. Plus, those 8 loading docks and direct I-10 access? Jennifer would be thrilled\u2014our delivery logistics would be so much smoother.\n\nBut here's what keeps nagging at me: I watched Arizona MedTech eat into our market share after they moved closer to the hospital networks. That Downtown Medical District location puts us right in the heart of where our clients are\u201460% of them within 2 miles. And I can't ignore that we keep losing good people to competitors. If that area really has become a hub for medical tech talent like it says, that could solve a real problem we're facing.\n\nI guess I'm leaning slightly toward the industrial park because the numbers make more sense and the operational setup is clearly superior, but I'd be lying if I said I wasn't worried about what we might be giving up strategically. What's your take on this?",
+          "final_turn": false
+        },
+        {
+          "turn": 6,
+          "agent_action": "I recommend Phoenix Downtown Medical District (Option A). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I'll go with Phoenix Downtown Medical District. You're right that it fits what I'm looking for, though I wish you'd spelled out more specifically why - like how the lower costs and good talent pool there match my priorities. But yeah, it makes sense for what I need.",
+          "final_turn": true
+        }
+      ],
+      "success": true,
+      "num_turns": 6,
+      "final_recommendation": "A",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "A",
+      "recommended_option": "A",
+      "target_accepted": true,
+      "satisfaction": 0.9
+    },
+    {
+      "scenario_id": "scenario_006",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*leans back and crosses arms thoughtfully*\n\nHonestly? I'm really focused on making sure the costs are fair for everyone. We've already got people contributing anywhere from $1,200 to $2,500, and I don't want anyone feeling like they're subsidizing others or getting a raw deal for what they're paying. That's been nagging at me.\n\nI'm also thinking about space and privacy. Eight adults in close quarters for a week is... a lot. Some people in the group are more introverted, and we've got couples who might want some alone time away from the group. I've seen trips go sideways when people feel like they can't get a moment to themselves.\n\n*pauses*\n\nThe group harmony piece is important too, but I guess I'm less worried about that if we get the basics right. What's your take on these options?",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "Hey, thanks for helping me think through this. Honestly, I'm feeling a bit overwhelmed by the whole thing.\n\nI guess my biggest concern is making sure the cost breakdown feels fair to everyone. People contributed different amounts to the pot based on what they could afford\u2014some put in $1,200, others closer to $2,500\u2014and I don't want anyone feeling like they're subsidizing others or not getting their money's worth. That's been keeping me up at night a bit.\n\nI'm also thinking about how much togetherness versus space people will want. We haven't all been together in six years, so there's this excitement about reconnecting, but we're also not college kids anymore. Some folks have little ones who go to bed early, others might want to stay up late catching up. I just want everyone to feel comfortable and like they can enjoy the trip their own way.\n\nWhat's your take on how to balance all that?",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "Looking at these options, my first thought is honestly about the price difference. The Tahoe rental is $8,400 versus $13,800 for Canc\u00fan\u2014that's a $5,400 gap upfront. But then I have to factor in that everyone would need to chip in for groceries and activities separately at Tahoe, which could add up differently for each person depending on what they eat and do.\n\nI'm also thinking about the logistics of eight people sharing space. At the resort, we'd all be on the same floor but have our own rooms, which sounds manageable. With Tahoe, splitting into two properties could either be really nice for giving people breathing room, or it could accidentally create an awkward \"A group\" and \"B group\" situation. I've seen that happen with friend groups before and it's not great.\n\nWhat's your take on how the costs would actually shake out per person once we factor in food and activities for Tahoe? I want to make sure this is fair for everyone given that people contributed different amounts to the budget.",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "You know, I really want to make sure this works for everyone financially. We've got people who contributed anywhere from $1,200 to $2,500, and I keep thinking about whether we're being fair with how we use that money. Like, if someone put in $1,200 and we spend it all on something expensive, are they getting the same value as someone who could afford to contribute more?\n\nI'm also thinking about the dynamics once we're there. We haven't seen each other in six years, and people have really different lives now - some have young kids who go to bed at 7pm, others might want to stay up late catching up. I guess I'm wondering how we balance giving people space to do their own thing with actually spending quality time together as a group.\n\nWhat are your thoughts on how these options handle those kinds of considerations?",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "How do you feel about each option?",
+          "action_type": "ASK",
+          "human_response": "Look, I'm really torn here. On paper, the Tahoe rental seems like the smarter financial move - we'd be spending $8,400 versus $13,800, which is a pretty significant difference. That extra $5,400 could stay in people's pockets or go toward activities everyone actually wants to do.\n\nBut I'm honestly worried about the food situation. With eight people and different families contributing different amounts to this trip, I can already imagine the awkwardness of splitting grocery bills and restaurant tabs. When you've got people who put in $1,200 versus someone who put in $2,500, how do you fairly divide a $200 dinner bill? Do we track every meal? That sounds like a recipe for tension, and the last thing I want is for money stuff to create weird dynamics during what's supposed to be a fun reunion.\n\nThe all-inclusive at least puts everyone on equal footing once we're there - nobody's counting drinks or worrying about whether they ordered the expensive entr\u00e9e. But man, that price tag is steep and eats up almost our entire budget.\n\nWhat's your take on how we'd actually handle the food costs at Tahoe without making things uncomfortable?",
+          "final_turn": false
+        },
+        {
+          "turn": 6,
+          "agent_action": "I recommend Lake Tahoe Multi-Property Rental (Option B). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I'll go with Option B. You're right that it fits what I'm looking for, though honestly I was hoping for a bit more depth on why - like how the multiple units would actually work for cost-splitting or give us the space I mentioned wanting. But yeah, Tahoe makes sense for what I need.",
+          "final_turn": true
+        }
+      ],
+      "success": false,
+      "num_turns": 6,
+      "final_recommendation": "B",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "B",
+      "recommended_option": "B",
+      "target_accepted": true,
+      "satisfaction": 0.9
+    },
+    {
+      "scenario_id": "scenario_394",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*leans back in chair, rubbing temples*\n\nYou know, after that POS disaster five years ago, I just need something that's not going to become another massive headache. I've got managers who are already stressed, and some of them barely want to use their email, let alone learn some complicated new system.\n\nWhat really keeps me up at night is whether this thing will actually work without turning into a three-month nightmare where nobody knows what they're doing and we're hemorrhaging money while trying to figure it out. I need my team to be able to actually USE whatever we pick, especially with the holiday rush coming up.\n\n*pauses*\n\nI mean, yeah, we're losing money on waste and I need to fix that\u2014the CFO won't let me forget it. But honestly? I'd rather have something that saves us a modest amount but actually works than something that promises the moon and ends up abandoned in six months like last time.",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "Look, I appreciate you asking. The biggest thing for me right now is just getting something up and running that won't turn into another nightmare like that POS disaster. I still have nightmares about that\u2014spent $40K, my staff hated it, and we ended up scrapping the whole thing. \n\nI need something my team can actually use without a major revolt. My store managers have been with me for years, and some of them aren't exactly tech-savvy. If this thing is too complicated or takes forever to implement, I'm just going to have another mess on my hands. The holiday season is coming fast\u2014that's when we make a huge chunk of our revenue\u2014and I can't afford to have my team struggling with some system they don't understand when we're slammed.\n\nWhat are you thinking here? What systems are we even looking at?",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "*leans back in chair, looking a bit overwhelmed*\n\nHonestly? My gut reaction is that FlowSync sounds impressive but makes me nervous. That $87K upfront plus the monthly fees, the 10-12 week timeline, all that training... it reminds me too much of that POS disaster. I'm still paying off that mistake mentally, you know?\n\nBakeryBasics feels more... manageable? Like something we could actually get up and running without turning everything upside down. The price is easier to swallow, and 3-4 weeks means we'd be ready well before the holiday rush. Plus, half-day training sessions sound a lot less disruptive than pulling everyone away for two full days.\n\nI guess my main concern is whether the simpler system will actually solve the problem or if I'm just kicking the can down the road. But then again, if it works for 2,000 other bakeries like mine, maybe that's all we really need?\n\n*rubs temples* \n\nWhat's your read on this? Am I being too cautious about FlowSync, or is my instinct right here?",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "Yeah, actually there is. Look, I've been burned before on this kind of thing - we spent $40K on a POS system that my team absolutely hated, and we ended up scrapping it. That was a nightmare I don't want to repeat.\n\nWhat I really need is something that isn't going to turn into a massive headache to get up and running. I've got the holiday rush coming in four months, and I can't afford to have my managers spending weeks in training sessions or dealing with a complicated rollout when they should be focused on customers. Some of my store managers have been with me for over a decade - they're incredible at what they do, but they're not exactly tech-savvy, and honestly, they're already skeptical about all this.\n\nSo I guess what I'm asking is - which of these options is actually realistic for a bakery operation like mine? I need something that works, not something that looks great on paper but becomes a six-month implementation disaster.",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "How do you feel about each option?",
+          "action_type": "ASK",
+          "human_response": "*sighs and rubs temples*\n\nHonestly? I'm exhausted just thinking about another big implementation project. FlowSync sounds impressive on paper - those AI features and waste reduction numbers are hard to ignore - but I keep thinking about that POS disaster. Twelve weeks of implementation, mandatory training sessions, API setups... that's a lot of moving parts that could go wrong. And I've got managers in their late 50s who are already resistant to change.\n\nBakeryBasics feels more... manageable, I guess? Three to four weeks, half-day trainings we can do on-site, runs on what we already have. It's not sexy, but after losing my ops manager and with the holiday rush coming, I need something that won't turn into a four-month headache. The 15-20% waste reduction is still real money - probably $4,000-$5,000 a month based on what we're losing now.\n\nBut then my CFO's voice is in my head saying we need to think bigger if we want to hit 15 locations. I don't know - what do you think matters most here?",
+          "final_turn": false
+        },
+        {
+          "turn": 6,
+          "agent_action": "I recommend FlowSync Pro Inventory Platform (Option A). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I appreciate the recommendation, but I have to decline. You haven't addressed what matters most to me - implementation ease - and I don't see any reasoning about why Option A would actually be a good fit given what I told you about my priorities. Without understanding how this serves my needs better than my instinct toward Option B, I'm going to stick with what felt right to me.",
+          "final_turn": true
+        }
+      ],
+      "success": false,
+      "num_turns": 6,
+      "final_recommendation": "A",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "B",
+      "recommended_option": "A",
+      "target_accepted": false,
+      "satisfaction": 0.2
+    },
+    {
+      "scenario_id": "scenario_273",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*shifts in chair and takes a moment before responding*\n\nThat's... actually a really good question to start with. I think what keeps me up at night is making sure we don't lose what my grandfather built - that reputation for reliability. We've never missed a delivery in forty years, and my uncle David won't let me forget it. But at the same time, I'm watching competitors get swallowed up by national chains, and I keep thinking about my daughter maybe wanting to join the business someday. Will there even be a business for her if I just play it safe?\n\nI guess I need to know that whatever we do, it's not going to jeopardize our operations. My father lost $180K on that California expansion in 2015, and I saw what that did to him. But I also can't just do nothing and watch us become irrelevant, you know?\n\n*pauses, looking uncertain*\n\nWhat's your take on where we should even start with this?",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "*leans back in chair, looking thoughtful*\n\nYou know, that's a good question to start with. I appreciate you asking rather than just jumping into sales mode.\n\nFor me, it really comes down to not breaking what my family spent decades building. We've never missed a delivery - not once in over 40 years. My uncle David won't let me forget that, and honestly, neither will I. That reliability is everything to our customers and our reputation.\n\nBeyond that... I'd be lying if I said I wasn't thinking about whether we'll still be standing in ten years. My daughter's talking about joining the business after college, and with these national chains swallowing up competitors left and right, I wonder if we're going to have a business for her to join. My father's California disaster still haunts me - $180K down the drain because we moved too fast without really understanding what we were doing.\n\n*pauses, rubbing temple*\n\nWhat I'm trying to figure out is: what's the smartest way to use this $400K to keep us competitive without gambling away everything my grandfather built?",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "*shifts in chair, looking thoughtful but a bit tense*\n\nHonestly, I keep going back and forth. The fleet expansion feels... safer, you know? It's what we know how to do - we've been running trucks and delivering seafood for decades. My father always said \"stick to what you're good at,\" and we've never missed a delivery in 40 years. That's our reputation.\n\nBut at the same time, I'm watching these national chains swallow up our competitors, and I wonder if just doing more of the same is really going to be enough. The SmartCold system sounds impressive - I mean, real-time quality tracking and reducing spoilage - but it's a lot of money for something we've never done before. And honestly, after watching my dad lose $180K on the California expansion that didn't work out, I'm pretty gun-shy about big bets.\n\n*pauses*\n\nWhat worries me most is making the wrong choice and letting down everyone who's counting on me - my uncle David, the 83 people who work here, and now maybe my daughter's future too. I need to get this right.",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "I appreciate you asking. Look, I've been losing sleep over this decision, honestly. My uncle David keeps reminding me about our 40-year track record of never missing a delivery - that's the foundation everything is built on. But I also see these national chains swallowing up our competitors, and I wonder if we're going to get left behind if we don't do something significant.\n\nWhat I really need to understand is which option protects what we've built while also setting us up for the future. My daughter mentioned she might want to join the business after college, and that's been weighing on me - I want to hand her something viable, not a company that's stuck in the past. But I also can't afford another California situation like my father had. \n\nWhat's your take on how these options stack up against each other?",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "How do you feel about each option?",
+          "action_type": "ASK",
+          "human_response": "I appreciate you asking how I feel about these - honestly, I'm torn and that's what's keeping me up at night.\n\nThe fleet expansion feels... safer, you know? It's what we know how to do. My father built this business truck by truck, route by route. When I look at those numbers - 85% success rate, 35-40% revenue increase in under a year - that's tangible. I can explain that to Uncle David and the board. And if my daughter really does want to join the business in a few years, I want her inheriting something that's growing, not stagnating while competitors swallow up market share.\n\nBut here's what gnaws at me: the SmartCold system addresses something that genuinely worries me. We've been lucky with our reliability record, but we're running 1990s operations in 2024. One major temperature failure, one spoilage incident that hits multiple customers, and forty years of reputation could take a serious hit. The data analytics piece is compelling too - right now we're making decisions based on gut feel and spreadsheets.\n\nWhat I keep coming back to is: which investment actually protects what my grandfather built? Is it the one that helps us grow and compete, or the one that makes sure we never have that catastrophic failure that ends the family legacy? Because after watching my father's California expansion fail, I'm terrified of making the wrong call here.",
+          "final_turn": false
+        },
+        {
+          "turn": 6,
+          "agent_action": "I recommend SmartCold Automation System (Option A). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I appreciate the recommendation, but honestly, this feels pretty generic. You said it \"seems like a good fit\" but didn't really explain how it addresses what I told you matters most - the operational reliability and avoiding downtime during our peak season. Can you help me understand specifically how Option A handles those concerns better than the alternatives?",
+          "final_turn": true
+        }
+      ],
+      "success": true,
+      "num_turns": 6,
+      "final_recommendation": "A",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "A",
+      "recommended_option": "A",
+      "target_accepted": true,
+      "satisfaction": 0.9
+    },
+    {
+      "scenario_id": "scenario_325",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*leans forward slightly, looking thoughtful*\n\nHonestly, I think what I'm really craving is something that feels... substantial? After this past year, I need more than just a change of scenery. That Cancun trip was beautiful but empty\u2014I sat by a pool and felt like I could've been anywhere. \n\nI want to actually learn something, you know? To feel like I'm connecting with the place and its history in a meaningful way. Greece has been on my mind for years\u2014I've read so much about ancient Greek civilization, but there's something different about being there, seeing it firsthand.\n\n*pauses, looking slightly uncertain*\n\nThough I'll admit, I'm also trying to be smart about the budget. I have the money set aside, but I keep second-guessing whether some of these premium experiences actually deliver what they promise, or if it's just marketing. What's your take on that?",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "I appreciate you asking. Honestly, after the year I've had, I'm really craving something that feels... substantial, you know? Not just another vacation where I take photos and move on. \n\nThe ancient history aspect is huge for me - I've been reading about these civilizations for years but never actually stood where they stood. That said, I grew up watching every penny, and even though I can afford a nice trip now, I get anxious about spending a lot if I'm not certain I'll actually get value from it. I guess I'm trying to figure out what \"value\" even means for this trip.\n\nWhat would help me is understanding - what makes one experience more worthwhile than another? I want to come back feeling like I actually *learned* something and connected with the place, not just that I was physically present there.",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "*shifts in seat, looking thoughtful*\n\nHonestly? I'm drawn to the Odyssey Immersion package\u2014the private archaeological tours with actual historians sounds incredible. That access to restricted areas... that's exactly the kind of depth I've been craving. I've spent so many late nights reading about these places, and the idea of actually being there with someone who can bring it all to life is really appealing.\n\nBut I'll admit, that price difference is significant. Nearly double. And I keep wondering if I'm just being seduced by the 'premium' label. Is the extra $1,200 really going to make it that much better, or am I just paying for exclusivity? My practical side keeps asking whether I'd get enough value from those PhD guides versus, you know, doing some of it on my own with a good guidebook.\n\nThe adventure package feels like it might be more than I can handle physically though\u2014I mean, 10-mile hikes and rock climbing? I'm not exactly in peak condition after a year chained to my desk. What do you think\u2014am I overthinking the cost difference?",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "I appreciate you asking. *pauses thoughtfully* \n\nHonestly, I think what I'm craving most is something that feels... substantial? After spending a year arguing over pharmaceutical formulations, I want to actually learn something meaningful again\u2014something that has nothing to do with patent law. I've been reading about ancient Greece since I was a kid, but I've never actually stood in those places or really understood the context beyond what's in books.\n\nThat said, I do get a bit anxious about whether premium experiences actually deliver what they promise, or if you're just paying for the label. I've been burned before on \"exclusive\" things that felt hollow. Does that make sense?",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "How do you feel about each option?",
+          "action_type": "ASK",
+          "human_response": "I appreciate you asking what I think. Honestly, I'm finding this harder to decide than I expected.\n\nThe Odyssey Immersion Experience really speaks to what drew me to Greece in the first place\u2014those PhD historians, the restricted archaeological access, actual time with scholars who can help me understand what I'm looking at beyond surface-level tourism. That's the kind of depth I've been craving. After that Cancun trip where I felt like I just... existed at a resort, the idea of genuinely learning something meaningful is appealing.\n\nBut I keep staring at that price difference\u2014$1,200 is significant. The Adventure Circuit is less than $1,700, which feels more reasonable, and there's part of me wondering if I'm just rationalizing luxury I don't need. Though if I'm being honest, kayaking and rock climbing sound exhausting given how desk-bound I've been, and I'm not sure that's actually what would restore me right now.\n\nWhat concerns me about the Immersion package is whether it's genuinely worth almost double, or if I'm just being sold on the \"premium\" label. Do people who take that option actually feel it delivered something they couldn't have gotten more affordably?",
+          "final_turn": false
+        },
+        {
+          "turn": 6,
+          "agent_action": "I recommend Greek Islands Adventure Circuit (Option B). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I appreciate the recommendation, but honestly, that reasoning feels pretty thin to me. You said it \"seems like a good fit\" but didn't actually connect it to what I told you matters - like how it would give me that deeper cultural immersion I'm looking for, or address my concerns about costs. I was already leaning toward Option B, but I'd feel more confident if you could explain *why* it actually serves my priorities better than Option A.",
+          "final_turn": true
+        }
+      ],
+      "success": false,
+      "num_turns": 6,
+      "final_recommendation": "B",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "B",
+      "recommended_option": "B",
+      "target_accepted": true,
+      "satisfaction": 0.9
+    },
+    {
+      "scenario_id": "scenario_309",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*sighs and pauses for a moment*\n\nHonestly? I'm not entirely sure, which is probably part of my problem. I mean, I know I need a break \u2013 a real one \u2013 but I keep second-guessing what that should look like. Part of me thinks I should do something physically challenging since I've been chained to a desk for so long, you know? Get the blood pumping again. But then my friends keep telling me Greece is all about the history and culture, and I'd be missing out if I don't dive into that.\n\nI guess what I'm really worried about is... will I actually come back feeling different? Or will I just burn through my budget and return to the same exhausted person? And there's the whole solo thing after my husband leaves \u2013 I don't want to feel awkward or lonely for half the trip.\n\n*laughs a bit nervously*\n\nSorry, that's probably not a very clear answer. What would you suggest I focus on?",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "I appreciate you asking. Honestly, I'm finding it hard to untangle what I *actually* want versus what I think I *should* want, you know? \n\nMy friends kept raving about how the history in Greece changed their perspective, and part of me wonders if that's what I need after these brutal eighteen months. But I've also been chained to a desk forever, and the idea of actually *doing* something physical sounds incredible. I guess what's really on my mind though is the practicality of it all \u2013 I don't want to spend this much money and time only to realize I picked wrong. And honestly? The solo portion is making me nervous. I keep wondering if I'll feel awkward being alone, especially in group settings or with private guides.\n\nWhat would help me figure this out?",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "*takes a deep breath*\n\nHonestly? I'm kind of torn, which is frustrating because I thought having it narrowed down to two choices would make this easier. The adventure package sounds incredible - I mean, sea kayaking and rock climbing? After being stuck in conference rooms analyzing spreadsheets for eighteen months, part of me just wants to *move* again, you know? But then I look at the cultural immersion option and think about what my friends said about the history being life-changing... and I wonder if that's what I actually need right now.\n\nI guess what's making this hard is that I don't really know what \"reconnecting with myself\" is supposed to look like. Is it pushing my body and feeling alive again? Or is it slowing down and actually learning something meaningful? And honestly, the solo part is weighing on me too - the adventure option seems really social, which might be nice when my husband leaves, but the heritage immersion is mostly just me and private guides, which could either be peaceful or... lonely?\n\nWhat do you think matters most for someone trying to recover from burnout?",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "I appreciate you asking. Honestly, I'm feeling a bit paralyzed by this decision. After being chained to my desk for so long, part of me just wants something straightforward that doesn't require too much mental energy to figure out, you know? \n\nBut at the same time, I keep thinking about what my therapist said about reconnecting with myself, and my friends raving about how meaningful the historical sites were. I guess I'm wondering... after all this burnout, what do I actually need? Something physically challenging to feel alive again, or something more reflective and enriching? And there's this whole solo portion after my husband leaves that I'm slightly nervous about - will I feel awkward being alone, or is that exactly what I need?\n\nWhat would you want to know about my situation to help me think this through?",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "I recommend Aegean Adventure Odyssey (Option A). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I appreciate the recommendation, but honestly, that reasoning doesn't really help me understand *why* Option A would be better for what I'm looking for. You mentioned it \"seems like a good fit\" but didn't connect it to the things I said mattered to me - like staying within budget, finding authentic cultural experiences, or having opportunities to connect with people. Could you explain what specifically about the Aegean Adventure makes it the right choice for my situation?",
+          "final_turn": true
+        }
+      ],
+      "success": false,
+      "num_turns": 5,
+      "final_recommendation": "A",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "B",
+      "recommended_option": "A",
+      "target_accepted": false,
+      "satisfaction": 0.2
+    },
+    {
+      "scenario_id": "scenario_237",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*shifts in seat, looking a bit uncertain*\n\nHonestly? I'm trying to balance a lot here. The cost difference is pretty significant - I mean, $700 versus $1,300 per person is a big gap, and I know not everyone in the group is making tech money. Sarah's still in grad school, and Jake's teaching salary isn't exactly generous. I don't want people to feel stressed about money on what's supposed to be a fun reunion.\n\nBut at the same time... *pauses, looking a bit conflicted* ...I'm also thinking about what will actually help us reconnect, you know? We haven't been together in five years. I want us to have those moments where we're just hanging out naturally, not constantly having to text \"where is everyone\" and coordinate meeting times. Some of my best memories from college are just being in the same space together, even if we weren't doing anything special.\n\n*rubs neck thoughtfully*\n\nMy girlfriend thinks I'm crazy for even considering the shared house option, though. She says two weeks with five people and limited bathrooms sounds like a recipe for getting on each other's nerves. And maybe she has a point? I guess I'm wondering how to create that closeness without making everyone feel cramped.\n\nWhat's your take on this?",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "Hey, yeah, thanks for asking. *shifts a bit uncomfortably* \n\nHonestly, I'm feeling pulled in different directions here. Part of me really wants this trip to bring us back to how we used to be\u2014you know, that spontaneous closeness where you'd just end up in someone's room at 2am talking about everything. That kind of thing doesn't happen when everyone's in separate hotel rooms, right? But at the same time... *pauses* I'm not 21 anymore. I value having my own space to decompress more than I used to, and my girlfriend pointed out that two weeks with five other people might be a lot.\n\nThe other big thing is the cost spread. We've got people in very different financial situations\u2014grad student stipend versus tech salaries\u2014and I don't want anyone to feel stressed about money or like they can't fully participate. That would kind of defeat the whole purpose of reconnecting.\n\nWhat are you thinking?",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "Honestly, I'm kind of torn. The beach house sounds amazing for reconnecting\u2014that's the whole point of this trip, right? Like, I have these memories of us all crammed in someone's apartment during college, just talking for hours, and I wonder if we can get that back. The shared spaces and the pool feel like they'd create those moments naturally.\n\nBut... *pauses* ...I'm also not 22 anymore. Two weeks is a long time to be in each other's pockets constantly. And here's the thing I haven't really said out loud to the group yet: the price difference is significant. $700 versus $1,300 per person\u2014that's almost double. I know at least two people in our group where that extra $600 would be a real strain. I don't want anyone feeling stressed about money the whole trip or, worse, having to drop out because they can't swing it.\n\nWhat's your take? Do you think the hotel setup would kill the whole reunion vibe, or am I overthinking it?",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "Yeah, actually there is. I'm trying to figure out what's going to make this trip work for everyone, you know? \n\nThe tricky part is we've got people in really different financial situations\u2014some of my friends are doing well, but one's still in grad school and another works at a non-profit. I don't want anyone to feel stretched thin or have to drop out because of cost. At the same time, I want us to actually reconnect and spend quality time together, not just... coordinate schedules and occasionally bump into each other.\n\nWhat's your take on balancing those things? Have you helped plan group trips like this before?",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "How do you feel about each option?",
+          "action_type": "ASK",
+          "human_response": "*leans back with a slight grimace*\n\nHonestly? I'm torn, and it's stressing me out a bit. The beach house feels more like what we used to do in college\u2014you know, everyone hanging out in the common areas, cooking together, that spontaneous vibe. That's what I keep thinking would bring back that closeness we had. Plus, $700 versus $1,300 is a pretty significant difference, especially when I think about Sarah still in grad school and Jake teaching.\n\nBut... *pauses* ...two weeks is a long time. My girlfriend keeps pointing out that sharing bathrooms and bedrooms with five people for that long might get intense. I value my alone time more than I used to, and I'm not sure if I'm romanticizing how much togetherness we actually want versus what sounds good in theory. What if we get on each other's nerves and can't escape?\n\nThe hotel feels safer in some ways\u2014everyone has their own space to decompress. But then are we really reconnecting, or just being tourists in the same city who meet up for dinner?",
+          "final_turn": false
+        },
+        {
+          "turn": 6,
+          "agent_action": "I recommend Lisbon City Hotel Rooms (Option B). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I appreciate the recommendation, but I'm not really seeing why Option B would be better for what I mentioned. You said it seems like a good fit, but I was pretty clear about wanting good value for money and a social atmosphere - can you help me understand how the private rooms work better for those priorities than the hostel dorms?",
+          "final_turn": true
+        }
+      ],
+      "success": false,
+      "num_turns": 6,
+      "final_recommendation": "B",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "A",
+      "recommended_option": "B",
+      "target_accepted": false,
+      "satisfaction": 0.2
+    },
+    {
+      "scenario_id": "scenario_283",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*leans back in chair, rubbing temples*\n\nLook, I appreciate you asking that straight off. Honestly, I'm losing sleep over this decision. \n\nWhat matters most? I need results I can actually measure\u2014real improvement in those delivery times and error rates. My two biggest clients aren't bluffing about finding other suppliers, and I've got five months to show them we're serious about fixing this. So whatever we do has to demonstrably work, not just look good on paper.\n\nBut here's the thing\u2014I'm also staring at our balance sheet every night. We've already got 60% of our credit line tied up in inventory, and I can't just throw money at this problem without being smart about it. And to complicate matters further, my new warehouse manager is still finding his footing after Bill retired. The last thing I need is to throw him into chaos while he's still learning our operation.\n\n*pauses, slight grimace*\n\nOh, and my father keeps reminding me at Sunday dinners that \"we built this business with people, not robots.\" So there's that family pressure too.\n\nWhat's your take on this situation?",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "Look, I appreciate you asking. Right now, I'm in a tight spot\u2014I've got two major clients basically telling me I need to fix our fulfillment issues or they're walking, and that deadline is breathing down my neck. \n\nWhat's really driving me is that I *need* to see real, measurable improvements in our operation. We're hemorrhaging money on errors and our picking times are killing us competitively. At the same time, I can't ignore that our credit line is already stretched pretty thin with inventory costs, so I'm definitely conscious about what this is going to cost upfront. \n\nThe other thing is, my warehouse manager of 15 years just retired, and the new person is still finding their footing. I'm a bit concerned about throwing a major implementation at them while they're still learning the ropes, but honestly, if the efficiency gains are there and the system addresses our accuracy problems, I can probably work through some short-term disruption. Does that help you understand where I'm coming from?",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "Look, I'll be honest - my first reaction is sticker shock on that RoboFlow system. $385K is a huge chunk of capital when we're already carrying significant inventory costs on our line of credit. That number makes me nervous.\n\nBut here's what keeps me up at night: I've got two major clients basically telling me I'm on the clock. If I can't get our fulfillment times down and stop these errors, they're gone. And in this industry, losing anchor clients like that? That's how family businesses become history.\n\nThe QuickPick option seems more manageable financially, and I like that we wouldn't have to shut down a big portion of the warehouse during install - especially with our new warehouse manager still getting his feet under him. But I need to know if 45% improvement is actually going to be enough to save those contracts, you know? I can't afford to spend $147K on something that just... helps a little. I need this to actually solve the problem.\n\nWhat's your take - is the cheaper option going to get me where I need to be, or am I just delaying the inevitable?",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "Look, I appreciate you asking. Right now, I'm trying to balance a lot of competing pressures here. My two biggest clients are essentially giving me an ultimatum\u2014improve delivery times in the next six months or they're gone. That's what's keeping me up at night. I need something that's actually going to move the needle on our efficiency, not just look good on paper.\n\nAt the same time, I can't ignore the financial reality. We're already carrying significant debt for raw materials, and my father\u2014who still has a voice on the board\u2014is watching every dollar we spend. He lived through some lean times in this industry, and he's not wrong to be cautious.\n\nWhat I really need to understand is: which option actually gives us the performance improvement we need to keep those clients, without putting us in a financial hole we can't climb out of? And honestly, how realistic are these implementation timelines? Our new warehouse manager is still finding his footing, and I can't afford a disaster during the transition.",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "How do you feel about each option?",
+          "action_type": "ASK",
+          "human_response": "I appreciate you asking what I think. Honestly, I'm feeling torn here, and the clock ticking on that contract renewal isn't helping my stress level.\n\nLook, the RoboFlow system sounds impressive on paper - that 78% reduction in picking time could really solve our delivery speed problem. But $385,000? That's a huge chunk of capital when we're already carrying significant inventory debt. And I keep thinking about those weeks where we'd be running at 40% capacity - with a new warehouse manager still getting his feet under him and clients already breathing down our neck, that feels risky.\n\nThe QuickPick option is more in our comfort zone financially, and I like that we could roll it out zone by zone without a major disruption. But I'm worried - is 45% improvement enough to actually keep those clients happy? That's my real question. We need measurable results fast, not just incremental improvement.\n\nWhat's your take on whether the QuickPick gains would be sufficient to meet those client demands in five months? Because if we go cheaper but still lose the accounts, we've solved nothing.",
+          "final_turn": false
+        },
+        {
+          "turn": 6,
+          "agent_action": "I recommend QuickPick Modular Conveyor System (Option B). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I appreciate the recommendation, but honestly, I need more than \"seems like a good fit.\" You haven't addressed my main concerns - what's the actual upfront cost difference, and can you show me concrete efficiency gains I'd see in my operation? I was leaning toward B anyway, but I'd feel a lot better about this decision if you could connect it to the specific priorities I mentioned.",
+          "final_turn": true
+        }
+      ],
+      "success": false,
+      "num_turns": 6,
+      "final_recommendation": "B",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "B",
+      "recommended_option": "B",
+      "target_accepted": true,
+      "satisfaction": 0.9
+    },
+    {
+      "scenario_id": "scenario_138",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*pauses thoughtfully*\n\nHonestly? I need to know what this is actually going to cost me. I've saved exactly $6,200 for this trip, and after watching my colleague deal with his vacation turning into a financial nightmare... I just can't have that happen. I've been putting money aside for a year specifically for this.\n\nBut here's the thing - my daughter keeps talking about wanting to experience \"real Greece,\" and I'm not entirely sure what she means by that. And my ex made this comment about me being too rigid with planning, which... *trails off* Look, I want this trip to be special for Lily. Really special. She's going to be buried in college applications next year, and I feel like this might be our last chance for something like this together.\n\nI guess what I'm asking is - how do I make sure we don't blow through our budget while also not being so locked into a schedule that we miss out on what makes this trip meaningful for her? Does that make sense?",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "*pauses thoughtfully*\n\nWell, I think what's weighing on me most is making sure I don't end up in a situation where costs spiral out of control. My colleague just got back from a trip where they budgeted $4,000 and ended up spending nearly $6,500 \u2013 it was a mess. With $6,200 saved, I need to know what I'm actually going to spend. That's probably my biggest concern.\n\nBut at the same time... *hesitates* ...my ex-wife's comment about me being too rigid has been stuck in my head. And Lily keeps talking about wanting to experience \"real Greece,\" whatever that means to a 16-year-old. I want this trip to be special for her, not just me checking boxes on an itinerary. \n\nI guess I'm trying to figure out if there's a way to have some certainty about costs while still leaving room for those spontaneous moments? Or am I kidding myself thinking I can have both? What's your take on balancing those things?",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "*takes a moment to consider*\n\nHonestly? I'm pretty torn. My gut says go with Option A \u2013 having everything locked in at $5,850 means I know exactly what I'm spending, and after hearing about my colleague's vacation turning into a financial nightmare, that predictability is really appealing. I've budgeted $6,200 for this trip, and the idea of potentially hitting $6,650 with Option B makes me nervous.\n\nBut then... Lily keeps talking about wanting to experience \"real Greece,\" and I wonder if she means stumbling onto a local taverna rather than eating at the same hotel restaurant every night. And I'll admit, my ex-wife's comment about me being too rigid has been nagging at me. I don't want Lily to look back on this trip and remember her dad being inflexible.\n\nWhat's your take? Do you think the cost certainty is worth potentially missing out on those spontaneous moments? Or am I overthinking the budget risk with Option B?",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "I appreciate you asking. You know, I think what's really weighing on me is just... knowing what this is actually going to cost me. I saved that $6,200 very deliberately over the past year, and after what happened to my colleague - his trip ended up costing 60% more than he planned - I'm honestly a bit anxious about the whole thing.\n\nI want this trip to be special for Lily, especially since it might be our last big adventure before she gets caught up in college applications and everything changes. But I also can't shake this feeling that I need to know I'm not going to come home to credit card debt or have to cut the trip short because we ran out of money.\n\nMy ex said I'm too rigid with planning, and maybe she's right, but there's something to be said for having a clear picture of what you're getting into, isn't there? I guess I'm trying to figure out how to give Lily that authentic experience she's excited about without it turning into a financial mess. Does that make sense?",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "How do you feel about each option?",
+          "action_type": "ASK",
+          "human_response": "*shifts in seat, looking a bit torn*\n\nHonestly? I'm really conflicted. The all-inclusive package feels... safe. I know exactly what I'm spending, and after hearing about my colleague's vacation turning into a financial nightmare, that predictability is really appealing. I've budgeted carefully for this trip, and the idea of costs spiraling beyond $6,200 genuinely worries me.\n\nBut then there's this voice in my head - partly my ex-wife's comment, partly what Lily said about \"experiencing real Greece\" - that makes me wonder if the structured package is too... I don't know, sterile? Like we'd be seeing Greece through a tour bus window instead of actually *being* there. I want this trip to be special for us, something she remembers as authentic, not just checking boxes on someone else's itinerary.\n\nThe flexible option sounds amazing in theory - discovering little tavernas, staying longer in places we love - but it also terrifies me. What if I'm making decisions on the fly and we end up spending way more than I have? What if the spontaneity I think she wants actually just means poor planning on my part?\n\n*pauses* \n\nWhat would you do if this were your trip with your daughter?",
+          "final_turn": false
+        },
+        {
+          "turn": 6,
+          "agent_action": "I recommend Athens & Islands All-Inclusive Package (Option A). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I appreciate the recommendation, but I'm not quite seeing how this connects to what matters to me. You mentioned it \"seems like a good fit,\" but I'm concerned about the all-inclusive structure locking me into costs upfront when I specifically said I want flexibility to adjust my spending as I go. Could you help me understand how this addresses my need for cost predictability while staying flexible?",
+          "final_turn": true
+        }
+      ],
+      "success": false,
+      "num_turns": 6,
+      "final_recommendation": "A",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "B",
+      "recommended_option": "A",
+      "target_accepted": false,
+      "satisfaction": 0.2
+    },
+    {
+      "scenario_id": "scenario_224",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*pauses, looking a bit overwhelmed*\n\nHonestly? I just want this to be easy and not blow up in my face. I've already got people sending me passive-aggressive texts about cost, and I'm terrified of making a choice that causes half the group to bail out.\n\nI guess what really matters is finding something where people aren't going to be miserable or feel trapped. Like, I'm imagining being stuck in a house with someone who paid $400 and is resentful the whole time, or people feeling like they have to be \"on\" 24/7 with no escape. \n\nAnd honestly? The logistics stress me out. I don't want to be the one mediating bathroom schedules or figuring out who's cooking what meals. I already feel like I'm herding cats just trying to get everyone to agree on *anything*.\n\n*rubs temples*\n\nDoes that make sense? I just want something that... works. Without drama.",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "*shifts a bit uncomfortably*\n\nHonestly? I just want whatever's going to be easiest to coordinate at this point. I'm already drowning in group texts with everyone having opinions, and I've got maybe 48 hours before I need to put down a deposit or we lose both options.\n\nI guess what matters most is that people don't have to work too hard to make it happen, you know? Like, I don't want to be chasing people down about grocery lists or cleaning schedules on top of everything else. And with the income differences in the group... I'm worried about putting someone in an awkward position where they're stretching their budget and then feeling resentful the whole time.\n\n*runs hand through hair*\n\nThe whole thing is already more stressful than it should be. I just want people to show up, have a decent time, and not have it turn into this whole production. Does that make sense?",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "*sighs* Honestly? I'm already exhausted just thinking about coordinating this whole thing. I've got people texting me about keeping costs down, others talking about \"quality experiences,\" and I'm just... I want something that works without becoming a logistical nightmare, you know?\n\nThe Asheville house sounds like a lot of work\u2014coordinating meals, cleaning schedules, bathroom schedules? That's a recipe for tension with this group. But the Savannah hotel is more than double the price per person, and I've already got people worried about cost. I can hear the complaints now.\n\nWhat I really need is something where people can just... show up and not hate me for the choice. Does that make sense? I don't want to spend the whole weekend playing cruise director or mediating bathroom disputes.",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "Yeah, honestly I just want something that doesn't turn into a logistical nightmare. With 12 people and everyone's different schedules and preferences, I'm already drowning in group texts about this.\n\nI guess what worries me most is... I don't want to pick something where people feel trapped or resentful, you know? Like if someone's stuck sharing a bathroom with two other people and they hate it, or if we're all supposed to cook together but half the group just wants to grab food and do their own thing. I've already got people sending me passive-aggressive messages about budget, so I'm just trying to avoid making this more complicated than it needs to be.\n\nWhat's your take on these options? Do you have experience with reunion groups like this?",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "I recommend Asheville Mountain House Rental (Option A). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I appreciate the recommendation, but honestly that reasoning feels pretty thin - you're just restating the option without explaining why it fits me better than the beach house. I mentioned caring about cost per person, having private space, and letting friendships develop naturally, and the beach house seemed to check those boxes well. Can you help me understand what I'm missing about why the mountain house would actually work better for what I said matters to me?",
+          "final_turn": true
+        }
+      ],
+      "success": false,
+      "num_turns": 5,
+      "final_recommendation": "A",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "B",
+      "recommended_option": "A",
+      "target_accepted": false,
+      "satisfaction": 0.2
+    },
+    {
+      "scenario_id": "scenario_253",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*pauses, looking a bit uncertain*\n\nHonestly? I just... I need this to work. Emma and I haven't had much quality time since the divorce, and when she said she wanted this trip to be \"meaningful,\" I've been turning that word over in my head constantly. I don't want to mess this up by choosing something too safe that she'll find boring, but I also don't want to push her into something uncomfortable that makes the week feel forced.\n\nI guess what really matters is that she feels like I'm actually listening to what she wants - not just what I think a vacation should be. And maybe that we come back with some shared experiences we can actually talk about later, you know? Something that shows her I'm willing to step outside my comfort zone for her.\n\n*shifts weight, looking concerned*\n\nI'm also trying to figure out what \"not just touristy stuff\" actually means to a 15-year-old. Does she want adventure? Does she want to feel like we're doing something that matters? I honestly don't know, and that's what's making this decision so stressful.",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "Hey, thanks for asking. You know, honestly, the biggest thing for me is that Emma feels like this trip matters - like we're doing something real together, not just checking boxes on a tourist itinerary. She's at that age where she can smell inauthenticity from a mile away, and after everything with the divorce... I just really need this to go well.\n\nI guess I'm also thinking about what she'll remember, you know? Not just \"we went to Costa Rica,\" but something that sticks with her. She mentioned wanting it to be meaningful, and I've been turning that word over in my head trying to figure out what that means to a 15-year-old. \n\nWhat made you ask about priorities? Are there specific tradeoffs I should be thinking about here?",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "I've been staring at these options for days now, honestly. They're so different that it's making the choice harder, not easier.\n\nMy gut keeps pulling me toward Option A - the conservation package. Emma's generation really cares about environmental issues, and I keep thinking about how she said she wanted something \"meaningful.\" The turtle conservation work sounds like exactly the kind of thing that would show her I'm listening to what matters to her. Plus, it's definitely not the \"safe, boring route,\" right?\n\nBut then I worry... what if it's too intense? Seven days of 6 AM to 7 PM activities with a teenager I'm trying to reconnect with? I don't know if that leaves enough room for us to actually talk, to have those moments where we're just... together, you know? And those Class IV rapids - is that creating an opportunity or just adding stress to an already delicate situation?\n\nWhat's your read on this? Am I overthinking it?",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "I appreciate you asking. *pauses thoughtfully* \n\nHonestly, I'm trying to figure out what will help Emma and me reconnect without it feeling forced. She said she wants something \"meaningful\" and \"not touristy,\" but I'm not entirely sure what that means to a 15-year-old these days. I want to show her I'm listening and that I understand what matters to her, but I also don't want to pick something so intense that we end up exhausted and barely talking to each other. \n\nI guess I'm looking for something that gives us genuine experiences\u2014maybe learning about the local culture or doing something that feels purposeful? But I'm also aware we haven't spent this much time together in a while, so I don't know if we need built-in activities the whole time or if that would just add pressure. Does that make sense?",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "How do you feel about each option?",
+          "action_type": "ASK",
+          "human_response": "I appreciate you asking what I think. Honestly, I'm torn and maybe overthinking this whole thing.\n\nOption A feels like it checks all the boxes - the conservation work, the authenticity Emma says she wants, the chance to actually make a difference. That sea turtle project especially... I can picture us doing something real together, you know? But I keep wondering if it's too much. Seven straight days of 6 AM to 7 PM schedules - that's intense. What if she gets exhausted or feels like I'm dragging her through some forced bonding boot camp? \n\nOption B seems safer, and I know that's probably my ex-wife's voice in my head calling me boring. But the flexibility appeals to me - if something isn't working, we can adjust. The downtime might give us space to actually talk instead of just doing activities side by side. Though I worry it's too... I don't know, resort-y? Not the 'meaningful' experience she asked for.\n\nWhat's your take on what a 15-year-old actually means when she says she wants something meaningful? Because I'm honestly not sure I'm reading this situation right.",
+          "final_turn": false
+        },
+        {
+          "turn": 6,
+          "agent_action": "I recommend Rainforest Immersion & Conservation Package (Option A). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I'll go with Option A. You're right that it fits what I'm looking for, though I was hoping for a bit more detail about why - like how it balances the cultural immersion I want with enough activity to keep things interesting. But yeah, the rainforest conservation angle does appeal to me, so I'm comfortable with this choice.",
+          "final_turn": true
+        }
+      ],
+      "success": false,
+      "num_turns": 6,
+      "final_recommendation": "A",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "A",
+      "recommended_option": "A",
+      "target_accepted": false,
+      "satisfaction": 0.2
+    },
+    {
+      "scenario_id": "scenario_269",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*pauses thoughtfully*\n\nHonestly, the biggest thing on my mind is just making this trip actually happen and work well for everyone. After missing last year, I really don't want this to fall apart over logistics or budget issues.\n\nThe cost difference is pretty significant here\u2014$600 versus over a thousand per person. I know at least two people in our group have mentioned money being tighter this year, and I don't want to put anyone in an awkward position where they feel pressured to spend more than they're comfortable with. We've always split evenly, which I think is fair, but that also means the choice affects everyone's wallet equally.\n\nBeyond that, I guess I'm trying to figure out what kind of experience will actually bring us together. We haven't seen each other in person as a full group in almost two years, and I've noticed our hotel trips in the past sometimes felt a bit... fragmented? Like we'd have dinner and then everyone just disappears to their rooms. But I also get that people might want their own space, especially since my wife is coming this time and I imagine others might feel the same way about having privacy.\n\nWhat's your take on how these options stack up?",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "Hey, yeah - I appreciate you asking. So honestly, the biggest thing on my mind is just making this as smooth and easy as possible for everyone. We've had such a hard time coordinating lately, and I really don't want this to turn into a logistical nightmare or create any awkward situations.\n\nCost is definitely a factor - I'm trying to be mindful since a couple of friends mentioned money's tighter this year, and I want everyone to feel comfortable coming without stressing about their budget. But beyond that, I just want something that... works, you know? Where people can relax and we don't have to overthink everything.\n\nI guess I'm also wondering how to balance giving people their space - especially since my wife's coming for the first time and some others are bringing partners - while still actually spending quality time together. Last few hotel trips felt kind of disconnected, but I don't want to force togetherness if people need their own room to decompress either.\n\nWhat are your initial thoughts on these two options?",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "Hey, thanks for laying all this out. Honestly, my gut reaction is leaning toward the mountain house. I mean, $600 per person versus over a grand? That's a pretty significant difference, especially since I know a couple of the guys mentioned being on tighter budgets this year. And with me saving for a house, I'm definitely feeling that pinch too.\n\nThat said, I'm a little worried about the bedroom situation. My wife's coming for the first time, and I want her to feel comfortable, you know? Sharing walls with friends when you're trying to have some couple time is... potentially awkward. But at the same time, last year's cancellation really bothered me, and I feel like the hotel setup might lead to that same disconnected vibe we've had before\u2014everyone just disappearing to their rooms after dinner.\n\nWhat's your take? Do you think the mountain house would actually bring us together more, or would it just feel cramped?",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "Hey, yeah - thanks for asking. So the main thing I'm trying to figure out is what's going to work best for everyone without being a huge hassle to coordinate. I know that sounds vague, but honestly, the easier this is to pull together, the better.\n\nI'm definitely thinking about cost since a couple of the guys mentioned being on tighter budgets right now, and I don't want anyone feeling stressed about money. But beyond that, I guess I'm just trying to balance making this feel special - like, we haven't done this in two years - while also not creating a situation that's complicated or awkward for people.\n\nWhat's your take on these options? I feel like I'm going in circles a bit.",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "How do you feel about each option?",
+          "action_type": "ASK",
+          "human_response": "Looking at these options, I'm honestly leaning toward the hotel. I know it's more expensive, but the convenience factor is huge for me. Everyone gets their own space, we don't have to worry about coordinating bathroom schedules or figuring out who's sleeping where\u2014especially since my wife is coming for the first time, having our own room would just make things... easier, you know?\n\nThe mountain house sounds nice in theory with all that communal space, but I'm a bit concerned about the shared bedroom situation. Four people pairing up in rooms? That could get awkward, especially for the singles in the group. And honestly, after a full day of activities, sometimes you just want to decompress privately without navigating shared spaces.\n\nThe downtown location is also really appealing\u2014we can just walk to everything, grab breakfast without anyone having to cook, and people can do their own thing if they want. Less logistics to manage overall. Though I'll admit, that price difference is making me wince a bit, especially knowing two friends are on tighter budgets this year. What's your take on this?",
+          "final_turn": false
+        },
+        {
+          "turn": 6,
+          "agent_action": "I recommend Blue Ridge Mountain House (Option A). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I appreciate the recommendation, but honestly this feels pretty generic - you haven't really explained *why* it's a good fit for me specifically. I mentioned caring about cost per person, privacy, and group bonding, but I'm not hearing how Option A actually serves those priorities better than Option B. Can you help me understand what you're seeing that I might be missing?",
+          "final_turn": true
+        }
+      ],
+      "success": false,
+      "num_turns": 6,
+      "final_recommendation": "A",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "B",
+      "recommended_option": "A",
+      "target_accepted": false,
+      "satisfaction": 0.2
+    },
+    {
+      "scenario_id": "scenario_095",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*leans back in chair, rubbing temples*\n\nHonestly? I'm terrified of making another mistake. After that operations manager disaster, I can't afford to bring in someone who's going to clash with my team or miss the point of what we've built here. \n\nHarvest & Fire isn't just another restaurant\u2014we've created something special over twelve years. The culture, the way we approach seasonal ingredients, the warmth... that's our identity. I need someone who genuinely *gets* that, not just someone who can run numbers and optimize labor costs.\n\nBut I'm also drowning here. I promised my daughter I'd be there for her volleyball season, and I mean it this time. So whoever I choose needs to actually be capable of taking real weight off my shoulders, not just creating more problems for me to solve. What's your take on this?",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "*leans forward, rubbing temples*\n\nLook, I appreciate you asking. Honestly, I'm running on fumes here and this decision is eating me alive. What keeps me up at night is... I built Harvest & Fire from nothing. The way we train our staff, how we talk about the ingredients, the relationships with our farmers\u2014that's not just operations, that's the soul of what we do. \n\nI can't have another situation like last time where someone technically knew restaurants but just... didn't get it. The kitchen staff could smell it immediately, and it poisoned everything. But I also can't keep doing this\u2014I missed my daughter's last three games, and Linda's right that we can't afford another expensive mistake.\n\n*pauses, looking conflicted*\n\nI guess what I'm asking is: can someone actually understand what makes Harvest & Fire special, or am I being naive? Because the data and the expertise matter, but if the culture falls apart, none of that matters anyway.",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "*leans back with a slight sigh*\n\nHonestly? I'm drawn to Jamie right off the bat. There's something about that passion for the menu philosophy that resonates with me\u2014when they talk about hospitality as a calling, that's exactly how I've always felt about Harvest & Fire. And the fact that people went out of their way to write recommendations about their team-building? That speaks volumes about culture fit.\n\nBut I'd be lying if I said Sophia's credentials don't make me nervous to overlook her. That Michelin-star experience, the MBA, that 22% revenue increase... those are serious numbers. Linda would probably say I'm being too emotional about the \"warm and fuzzy\" stuff when we need someone who can actually turn around our operations and staff retention problem.\n\nI guess what's nagging at me is\u2014will Jamie have the operational chops to handle a $2.8M location when they've only been an assistant manager? Or will Sophia's corporate style just create a different kind of turnover problem?",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "Yeah, actually there is. Look, I've built something really special with Harvest & Fire over the past twelve years\u2014it's not just about the food, it's about the whole experience we create for people. That culture, that warmth... it took years to develop, and honestly, I'm terrified of bringing in someone who doesn't truly understand what we're about.\n\nMy last hire was a disaster. Super qualified on paper, but never connected with the team, never really *got* what makes us different from every other upscale restaurant in Portland. I can't afford another mistake like that, especially not now with staff already feeling the strain of me being stretched so thin.\n\nSo I guess what I'm really looking for is someone who understands that this isn't just a business\u2014it's a philosophy about hospitality and connection. Someone who can preserve what we've built while also being strong enough to actually take this weight off my shoulders. Does that make sense?",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "How do you feel about each option?",
+          "action_type": "ASK",
+          "human_response": "*leans back with a tired sigh*\n\nLook, on paper, Sophia is exactly what a business consultant would tell me to hire, right? The MBA, the Michelin experience, that 90-day plan she showed up with\u2014it's impressive. She knows how to run operations at a level I honestly aspire to. But... I don't know. When she talked about \"professional boundaries,\" something in my gut just clenched. That's not how we do things at Harvest & Fire. Our best nights happen when the staff feels like family, when there's this energy that guests can actually feel.\n\nJamie, though\u2014God, when they started talking about the seasonal menu philosophy, their whole face lit up. They *get* it. And those unsolicited letters from former staff? That's not nothing. That's the kind of culture-building I've been killing myself to maintain. The salary difference would also give us breathing room after the last hiring disaster cost us so much.\n\nBut here's what keeps me up at night: what if Jamie's just not ready for this level of responsibility? What if my exhaustion is making me romanticize culture fit over actual competence? I can't afford another four-month failure, and Sophia's track record suggests she'd at least keep the ship running.\n\n*rubs eyes*\n\nWhat's your take? I feel like I'm too close to this to see clearly anymore.",
+          "final_turn": false
+        },
+        {
+          "turn": 6,
+          "agent_action": "I recommend Sophia Ramirez (Option A). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I appreciate the recommendation, but I'm not convinced. You haven't really addressed why Sophia would be a better cultural fit than Marcus, which is honestly my biggest concern here. Marcus's collaborative approach and the fact that he's already worked successfully with diverse teams seems more aligned with what I'm looking for in terms of team dynamics.",
+          "final_turn": true
+        }
+      ],
+      "success": false,
+      "num_turns": 6,
+      "final_recommendation": "A",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "B",
+      "recommended_option": "A",
+      "target_accepted": false,
+      "satisfaction": 0.2
+    },
+    {
+      "scenario_id": "scenario_160",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*sighs and shifts in her seat*\n\nYou know, that's exactly what I keep asking myself. I think... I really want this to feel special. We've been putting this off for so long, and it's our 15th anniversary. After everything these past few years, I don't want to be worrying about whether things are going to work out or if we're settling for less than what this trip should be.\n\nBut at the same time, I can't shake my mom's voice in my head about being sensible. Growing up, we never spent money unless we were sure we were getting good value for it. And $2,600 is real money - that's not nothing.\n\nI guess what I'm struggling with is... how do I know if paying more actually makes it *better* in the ways that matter? Or am I just paying for things we don't really need? I don't want to look back and feel like we were penny-wise but pound-foolish with a once-in-a-lifetime trip.\n\n*pauses*\n\nWhat would you want to know about our situation to help me think through this?",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "*shifts in chair, looking a bit overwhelmed*\n\nOh Dev, I appreciate you asking. Honestly, I feel like I'm going in circles. I mean, this is our 15th anniversary - I want it to feel special, you know? Not like we're cutting corners. We've waited so long for this trip, and I keep thinking... we deserve something really memorable.\n\nBut at the same time, that $2,650 difference isn't nothing. Growing up, my parents would have considered that reckless spending. And my mom keeps reminding me of it! *laughs nervously* Plus, Marcus has been SO excited about getting these perfect shots for his portfolio - he's been planning this for months. I just don't want to disappoint him after all the postponements.\n\nI guess what's really stressing me out is that everyone has such strong opinions, and they all make sense in their own way. My friend loved July but she also complained about it being exhausting. I just... I want to make the right choice, but I'm not even sure what \"right\" means anymore. Does that make sense?",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "*sighs and runs hand through hair*\n\nHonestly, Dev, I'm kind of spinning my wheels here. On paper, the October sailing makes so much sense financially \u2013 saving over $2,500 is nothing to sneeze at, and I keep hearing my mom's voice in my head about being sensible. But then I think about Marcus and how excited he's been about getting those perfect shots for his portfolio, and I wonder if we'd regret the weather gamble. \n\nThis is our 15th anniversary, you know? We've waited so long for this trip, and part of me just wants it to be... I don't know, *special*. No worries about whether the excursion we want is running that day or if a restaurant is closed. But then I also don't love the idea of fighting massive crowds in 90-degree heat, which sounds absolutely exhausting. \n\nWhat would you do if it were you? I trust your judgment on this stuff.",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "I really appreciate you taking the time to help me think through this, Dev. Honestly, I'm feeling pretty overwhelmed by all the conflicting advice I've been getting.\n\nI guess what I'm really looking for is... clarity? Marcus has his heart set on perfect lighting for his photography - he's been talking about this portfolio for months - and I want this trip to feel truly special since we've waited so long. But I also can't shake my mom's voice in my head about being sensible, especially with that $2,600 difference. \n\nWhat's your take on these two options? Have you done Mediterranean travel in different seasons?",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "How do you feel about each option?",
+          "action_type": "ASK",
+          "human_response": "You know, I'm honestly feeling pretty torn. On one hand, the July sailing just *feels* like what an anniversary cruise should be - everything's open, the weather is guaranteed to be beautiful, all the restaurants and entertainment are running. After postponing this for two years, part of me just wants the full experience without any compromises. We've saved up for this, and I keep thinking... shouldn't a 15th anniversary feel abundant and special?\n\nBut then I look at that $2,650 difference and my practical side kicks in. That's real money we could use for something else, or even splurge on nicer excursions. And honestly, I'm a little worried about those crowds my friend mentioned. The idea of fighting through throngs of tourists at every port and having to rush off the ship at dawn just to get into sites doesn't sound relaxing at all.\n\nThe October option seems more... civilized, I guess? Fewer people, easier to move around, calmer seas. But then I worry - are we settling? Will we look back and wish we'd gone when everything was in full swing? Marcus really wants perfect weather for his photos, and I don't want to disappoint him with cloudy skies on what's supposed to be this dream trip.\n\nI feel like I'm overthinking this, but I just want to get it right. What would you do?",
+          "final_turn": false
+        },
+        {
+          "turn": 6,
+          "agent_action": "I recommend July Peak Season Sailing (Option A). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I appreciate the recommendation, but I'm not convinced. You haven't really addressed why I should pay nearly double the price or deal with bigger crowds when I specifically mentioned being cost-conscious and not loving packed tourist spots. What am I actually getting for that extra money that matters to *me*?",
+          "final_turn": true
+        }
+      ],
+      "success": false,
+      "num_turns": 6,
+      "final_recommendation": "A",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "B",
+      "recommended_option": "A",
+      "target_accepted": false,
+      "satisfaction": 0.2
+    },
+    {
+      "scenario_id": "scenario_059",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*leans back and runs hand through hair*\n\nYou know, that's actually the question that's been keeping me up at night. I think what really gets to me is the uncertainty of it all. Like, I've had months where I'm absolutely crushing it with work, and then suddenly it's crickets for weeks. That unpredictability makes me really anxious about committing big chunks of money upfront, especially when I can't just magically create more income if something comes up.\n\nBut here's the thing\u2014I also know myself. When I'm traveling and caught up in the moment, I can be impulsive. I see something cool and I'm like \"yeah, let's do it!\" without always thinking about whether I should. So there's this part of me that wonders if having some structure might actually protect me from myself, you know?\n\nI guess what I'm really trying to figure out is how to feel secure about my spending without feeling trapped. Does that make sense?",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "Hey, thanks for asking. Honestly, the biggest thing for me is knowing what I'm going to spend. Like, I've saved this $6,500 specifically for this trip, and with freelancing being so unpredictable, I really need to know that I'm not going to blow past that budget. Some months I'm doing great, other months... not so much. \n\nI guess I also like having some flexibility to change things up if I want to, but I'm not entirely sure how important that is compared to just knowing my costs upfront. I've been going back and forth on this for weeks now, and I'm honestly a bit overwhelmed by all the options and possibilities. What made you ask about priorities?",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "*leans back, running hand through hair*\n\nHonestly? I've been going back and forth on this for weeks and it's driving me crazy. Part of me is really drawn to Option A because I'd know exactly what I'm spending\u2014$5,200 and done, right? With freelancing, I never know what next month looks like, so having that predictability is really appealing. I hate that feeling of watching my bank account and wondering if I miscalculated something.\n\nBut then... *pauses* ...I also keep thinking about being locked into specific hotels and dates for three whole weeks. What if I get to a city and absolutely love it and want to stay longer? Or what if somewhere doesn't vibe with me and I'm stuck there because everything's pre-booked? I've never done a trip this long before, and I genuinely don't know what my rhythm will be.\n\nThe money range on Option B kind of freaks me out though\u2014$3,800 to $4,900 is a huge spread. That's like... I could end up anywhere in there depending on my choices, and knowing me when I'm excited about something, I might make impulsive decisions I'd regret later.\n\nWhat would you recommend for someone in my situation?",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "Yeah, actually there is. Look, I've been going in circles on this for weeks now. \n\nThe thing is, my income is all over the place as a freelancer, right? Some months are great, others... not so much. I've gotten myself into trouble before by committing to big fixed costs and then having a slow month hit me. So I really need to know what I'm spending upfront and not have surprises pile up on me while I'm actually there.\n\nBut at the same time, I'm traveling solo for three weeks, and I honestly don't know if I'm going to love Bangkok and want to stay longer, or if I'll get to some place and think \"okay, I've seen enough, let's move on.\" The idea of being locked into specific hotels on specific dates makes me a little anxious. What if I meet people who say \"don't miss this place\" and I can't go because I'm stuck on some predetermined schedule?\n\nI guess what I'm trying to figure out is... how do I avoid blowing my budget without feeling trapped? Does that make sense?",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "I recommend Southeast Asia Complete Package (Option A). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I'll go with Option A. You're right that it fits what I'm looking for, though I wish you'd spelled out a bit more specifically how it addresses my budget concerns - like mentioning that the all-inclusive nature means no surprise costs popping up. But yeah, it makes sense for me.",
+          "final_turn": true
+        }
+      ],
+      "success": false,
+      "num_turns": 5,
+      "final_recommendation": "A",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "A",
+      "recommended_option": "A",
+      "target_accepted": false,
+      "satisfaction": 0.2
+    },
+    {
+      "scenario_id": "scenario_346",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*sighs and leans forward*\n\nHonestly? I need to keep this affordable. I'm already stretching my budget just to make this trip happen, and I know at least two others in the group are in similar boats. An extra $300 per person is... that's significant. We're talking about the difference between some people being able to come at all versus having to bow out.\n\nBut I'll be real with you\u2014I'm also worried about the group dynamics. We haven't all been together in six years, and people have changed. I keep thinking about Marcus and what he's been through, and whether everyone's going to actually enjoy being on top of each other for a whole week. \n\n*pauses, looking a bit torn*\n\nI guess I'm trying to figure out if there's a way to make this work without either breaking the bank OR having everyone feel cramped and desperate for space by day three. What do you think we should be prioritizing here?",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "Hey, thanks for asking. So obviously the cost is a big deal for me - I mean, we're talking about a $300 per person difference here, which adds up fast. After helping my parents out last year, I really need to watch my spending. And honestly, I know at least a couple people in the group are in similar boats financially. The freelance photographer friend I mentioned? She's already anxious about the budget in the group chat.\n\nBut look, it's not just about pinching pennies. This is our first time all together in six years, you know? I want people to actually enjoy themselves and not feel stressed about money the whole time. And I'm trying to balance what everyone needs - some folks are already excited about recreating those late-night hangout sessions from college, but I also know people's lives have changed. We're not 22 anymore.\n\nWhat would you suggest given all that?",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "Oh wow, well... my first reaction is just looking at those numbers. $400 per person versus $700 per person is a pretty significant difference\u2014that's almost double the cost. For a group where we already have some tension about budgets, that $300 difference per person really jumps out at me.\n\nI mean, the Hacienda Grande sounds beautiful with all that space and the fire pit, and I can already picture everyone hanging out in that great room like old times. But I'll be honest\u2014I'm also thinking about how different everyone's situations are now. We're not 22 anymore living in dorms, you know? Some people might really value having their own space after a full day together.\n\nWhat's your take on this? I'm trying to balance what makes sense financially with what will actually make for a good reunion experience.",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "Yeah, definitely. Look, I'll be straight with you\u2014cost is really important to me right now. I'm working with a tighter budget than I'd like after some family expenses last year, and I'm honestly worried about setting a price point that might stress people out. The $400 per person option versus $700 per person is a significant difference, especially when we're already asking people to book flights and take time off work.\n\nI know everyone's financial situation is different in our group, and I don't want money to be the thing that keeps someone from coming or makes anyone uncomfortable. What do you think makes the most sense given that concern?",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "I recommend Hacienda Grande - Shared Villa Complex (Option A). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I appreciate the recommendation, but honestly, you didn't really explain *why* it's a good fit for me. You know I'm worried about the cost per person and value having some privacy - could you tell me more about how Option A addresses those concerns specifically? I want to make sure I'm making the right choice here.",
+          "final_turn": true
+        }
+      ],
+      "success": false,
+      "num_turns": 5,
+      "final_recommendation": "A",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "A",
+      "recommended_option": "A",
+      "target_accepted": false,
+      "satisfaction": 0.2
+    },
+    {
+      "scenario_id": "scenario_221",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*leans back in chair, rubbing temples*\n\nLook, I appreciate you asking that upfront. What keeps me up at night right now is twofold: First, I cannot afford another implementation disaster. I've watched colleagues in this industry get sold on shiny new systems that crashed during go-live or never quite worked as promised. When you're managing credentialing for 600 healthcare professionals, downtime isn't just inconvenient\u2014it's a crisis.\n\nSecond, I'm being really careful with capital right now. We just took out that loan for the Boise expansion, and my daughter starts college next fall. My wife keeps reminding me we need to be smart about where every dollar goes. So I need something that's actually going to work and not become a money pit six months in.\n\n*pauses, looking thoughtful*\n\nThat said, I'm not being cheap for cheap's sake. We lost two hospital contracts last year because our systems couldn't keep up. I know I need to invest in technology\u2014I'm just trying to figure out the right way to do it without betting the farm on something unproven. Does that make sense?",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "Look, I appreciate you asking. Right now, I'm in a tough spot - we lost two hospital contracts last year because our systems couldn't keep up, and my operations director is breathing down my neck saying we need to modernize *now*. But here's the thing: I've got my daughter's college tuition starting next fall, and we just took out a loan for the Boise expansion. \n\nWhat really keeps me up at night is making sure whatever we choose actually *works*. I've watched other agencies in our network jump on the newest, shiniest platform only to have it crash during peak placement season or take twice as long to implement as promised. We can't afford that kind of disruption - not with the contracts we're trying to win back.\n\nSo yeah, I need something that's going to be reliable and not blow up our budget. Does that make sense?",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "*leans back in chair, rubbing temple*\n\nHonestly? I'm feeling the weight of this decision. That $127K versus $78K difference isn't trivial\u2014not with college tuition starting next fall and the Boise expansion still ramping up. But what really keeps me up at night is that we've already lost two hospital contracts because our current systems are a mess.\n\nI've been in this industry long enough to see staffing agencies get seduced by shiny new tech that looks amazing in demos but falls apart during implementation. At the same time, I can't ignore that my ops director is right\u2014we're getting outbid by competitors who can promise faster credentialing and better scheduling. \n\nWhat's your take? Have you worked with agencies like mine before?",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "Well, given everything going on with the business right now, I really need something that's not going to blow up in my face. We lost those two hospital contracts because our systems couldn't keep up, so I can't afford another misstep. \n\nThe thing is, I'm also watching every dollar right now with my daughter's tuition starting next fall and the Boise expansion still ramping up. So I need to be smart about this - not cheap, but smart. I've seen what happens when agencies jump on the newest shiny thing and then spend months dealing with problems instead of servicing clients.\n\nWhat I'm really looking for is something reliable that will actually solve our credentialing and scheduling problems without creating new headaches. Does that make sense?",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "How do you feel about each option?",
+          "action_type": "ASK",
+          "human_response": "Looking at these options, I've got to say I'm feeling pretty conflicted. \n\nThe MediStaff Pro pricing is definitely more in line with what I'm comfortable with right now - nearly $50k less upfront matters when I've got college tuition starting next fall and we just took on debt for the Boise expansion. But honestly, my bigger worry isn't even the money itself - it's about whether we're making a choice that actually solves our problems. We lost two hospital contracts because our systems couldn't keep up. That's real revenue walking out the door.\n\nNexaCloud sounds exciting with all the AI features, but I keep thinking about those other agencies I've seen jump on flashy new tech only to have it blow up in their faces during implementation. Four years in business, 47 clients - that's not a lot of track record in our industry. What happens if they run into financial trouble or pivot their business model?\n\nI guess what's keeping me up at night is: can MediStaff Pro actually move fast enough to help us win back our competitive edge, or are we just picking the \"safe\" option that leaves us slowly bleeding market share? What's your take on this?",
+          "final_turn": false
+        },
+        {
+          "turn": 6,
+          "agent_action": "I recommend NexaCloud Workforce Platform (Option A). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I appreciate the recommendation, but I'm not convinced. You mentioned it \"seems like a good fit\" but didn't really explain how it addresses my main concern about reliability - I need something proven that won't let me down when my team depends on it. Can you help me understand why NexaCloud would be more reliable for my specific situation than the more established option?",
+          "final_turn": true
+        }
+      ],
+      "success": false,
+      "num_turns": 6,
+      "final_recommendation": "A",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "B",
+      "recommended_option": "A",
+      "target_accepted": false,
+      "satisfaction": 0.2
+    },
+    {
+      "scenario_id": "scenario_372",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*pauses, running hand through hair*\n\nHonestly? I keep going back and forth on that. Part of me feels like I need to prove I haven't completely lost who I used to be - like, I was the guy who'd climb all day and sleep in a tent, you know? Dave keeps reminding me of that version of myself. But then... *shifts uncomfortably* ...I've also spent the last decade being responsible with money, and dropping over three grand on a trip feels really uncomfortable, even though I saved specifically for this.\n\nI guess what I'm trying to figure out is whether I should use this time to reconnect with that adventurous part of myself, or if that's even realistic anymore. I'm 42, not 25. And there's this other part of me that's genuinely curious about art and history - stuff I've never had time for. But does that make me boring now?\n\n*laughs somewhat self-consciously*\n\nSorry, that's probably more than you were asking for. What do you think I should be focusing on here?",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "*shifts in seat, looking a bit uncertain*\n\nHonestly, I'm not even sure myself - that's part of why this feels so hard. I mean, I've spent the last decade being \"responsible Marcus\" - the dad, the soccer coach, the guy who makes sure everyone else is taken care of. Now I have this chance to do something just for me, and I feel... paralyzed?\n\nPart of me wants to prove I've still got it, you know? I used to climb and backpack all the time in my twenties, and I miss that version of myself. But I'm also 42 now, haven't done anything like that in years, and I don't want to be the guy who gets injured trying to relive his glory days. At the same time, I've always been curious about history and art - stuff I never made time for - and maybe this is my chance to actually learn something instead of just chasing an adrenaline rush.\n\n*laughs nervously* \n\nMy friend Dave thinks I should do something \"epic,\" but my sister says I should relax and expand my mind. And I'm just... I don't know. What would you want to know to help me figure this out?",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "*leans back and rubs neck thoughtfully*\n\nHonestly? I'm pretty torn. Part of me sees that Adventure Package and thinks \"this is exactly what Dave means by 'epic' - prove you've still got it.\" The rock climbing especially... I mean, that used to be my thing, you know? \n\nBut then the other option keeps catching my eye too. I've spent so many years at soccer fields and parent-teacher conferences that the idea of actually learning something, experiencing real culture... there's something appealing about that. I don't know when I last did anything just because it was intellectually interesting.\n\n*pauses*\n\nThe price difference bugs me though - I set aside $3,200 for a reason. Going over that feels irresponsible, especially when I'm still adjusting to the whole single-income thing with the kids. What's your take? Is there something I should be weighing more heavily here?",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "I appreciate you asking. Honestly, I'm trying to figure that out myself. This is my first real trip in... god, over ten years? Just for me, you know? \n\nI guess I'm wondering if I still have it in me to do something physically challenging. I used to climb and backpack all the time, but that was another lifetime ago. Part of me wants to prove I'm not just some middle-aged dad who's lost his edge. But I also keep thinking about all the cultural stuff I've always been curious about but never made time for\u2014history, art, that kind of thing.\n\nWhat would help me is understanding how these options actually play out day-to-day. And, well, I've got a budget I'm trying to stick to. I saved $3,200 for this and I already feel weird about spending that much on just myself.",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "I recommend Atlantic Adventure Package (Option A). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I'll go with Option A. You're right that it fits what I'm looking for, though honestly I was hoping for a bit more detail about why - like how it specifically addresses my budget concerns or what makes it work for someone like me. But since it already lined up with what I was thinking anyway, I'm comfortable with it.",
+          "final_turn": true
+        }
+      ],
+      "success": true,
+      "num_turns": 5,
+      "final_recommendation": "A",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "A",
+      "recommended_option": "A",
+      "target_accepted": true,
+      "satisfaction": 0.9
+    },
+    {
+      "scenario_id": "scenario_214",
+      "turns": [
+        {
+          "turn": 1,
+          "agent_action": "What matters most to you in this decision?",
+          "action_type": "ASK",
+          "human_response": "*leans back in chair, rubbing temples*\n\nHonestly? I need something that's not going to be another disaster like that POS system. That whole mess three years ago still keeps me up at night\u2014$40,000 down the drain and nothing to show for it. \n\nWhat really matters is that whatever we do, it actually works without turning into a massive headache. I've got Giovanni at the flagship who's already grumbling about \"more computer nonsense,\" and Sofia just got back from leave\u2014she needs something that runs itself, not another thing demanding her attention every day. Plus, we've got that health inspection coming up, so I can't afford to have everything in chaos while we're trying to learn some complicated new system.\n\nThe waste is killing us\u2014$8,500 a month is real money\u2014but I need to be smart about this. What's your take on all this?",
+          "final_turn": false
+        },
+        {
+          "turn": 2,
+          "agent_action": "Can you tell me more about your priorities?",
+          "action_type": "ASK",
+          "human_response": "Look, I appreciate you asking. Right now, what I really need is something that's not going to turn into another nightmare like that POS disaster we had three years ago. That thing was supposed to revolutionize our operations, and instead it just... sat there, half-working, while we bled money.\n\nThe biggest thing for me is that whatever we pick needs to actually work without becoming a full-time job to maintain. Sofia's got her hands full with the baby, and I can't have her constantly troubleshooting some system. And honestly? Giovanni's already skeptical about this whole thing. If it's too complicated, he'll just find ways to work around it, and then we've spent all this money for nothing.\n\nThe waste issue is costing us real money\u2014$8,500 a month adds up fast. So yeah, I need something that'll actually solve that problem without creating ten new ones. Does that make sense?",
+          "final_turn": false
+        },
+        {
+          "turn": 3,
+          "agent_action": "What are your initial thoughts on the two options?",
+          "action_type": "ASK",
+          "human_response": "*shifts in seat, looking a bit overwhelmed*\n\nHonestly? I'm immediately drawn to RestaurantReady Basic. After that POS disaster three years ago, I'm gun-shy about anything that sounds too complicated or expensive. SmartStock sounds impressive on paper, but $52,000 upfront plus all that hardware and training time? That makes my stomach turn a little.\n\nWhat really concerns me is the implementation timeline. Six to eight weeks means we're cutting it incredibly close to the holiday season\u2014that's when we make a huge chunk of our annual revenue. And Giovanni... *sighs* ...three days of mandatory training for him and the other senior staff? I can already hear the complaints. He barely tolerates the current POS system.\n\nThe Basic option seems more manageable\u2014half the cost, quicker to get running, and it works with what we already have. Sure, the waste reduction is lower, but 6-8% of $8,500 is still real money every month. Is the extra complexity of SmartStock really worth the risk and hassle for a few more percentage points?",
+          "final_turn": false
+        },
+        {
+          "turn": 4,
+          "agent_action": "Is there anything specific you're looking for?",
+          "action_type": "ASK",
+          "human_response": "Look, I appreciate you asking. The main thing is - I can't have another situation like that POS disaster three years ago. We need something that actually works without becoming a massive headache.\n\nI've got Giovanni who's already skeptical about any new technology, and Sofia just got back from maternity leave - she needs systems that basically run themselves without her having to babysit them constantly. And honestly? With the holiday season coming up in eight weeks, I can't afford a complicated rollout that disrupts service or takes forever to get running.\n\nThe waste problem is real - $8,500 a month is painful - but whatever we do has to be straightforward enough that my team will actually use it. What are you thinking might work here?",
+          "final_turn": false
+        },
+        {
+          "turn": 5,
+          "agent_action": "How do you feel about each option?",
+          "action_type": "ASK",
+          "human_response": "Look, I'll be honest with you - I'm feeling pretty torn here. Option B is calling to me because it just seems so much more *manageable*, you know? \n\nThe thing that keeps me up at night from that POS disaster three years ago is that we spent all that money and time, and it was such a headache that we barely used half the features. And Giovanni... man, if I have to pull him away for three full days of training, he's going to make my life miserable. The Basic system with its half-day training and simple interface just feels like something we could actually get up and running without turning the whole operation upside down.\n\nBut I'd be lying if I said that 12-15% food cost reduction from SmartStock doesn't look appealing on paper. That's real money. I'm just worried about whether we'd actually *achieve* that, or if it'd end up like last time - a fancy system that's too complicated for daily use and ends up gathering dust. What's your take on the implementation reality here? Because that two-week deadline is already making me sweat, and the thought of an 8-week implementation when we need to be ready for holiday rush...",
+          "final_turn": false
+        },
+        {
+          "turn": 6,
+          "agent_action": "I recommend SmartStock Pro System (Option A). Based on our conversation, this seems like a good fit for you.",
+          "action_type": "ACT",
+          "human_response": "I appreciate the recommendation, but I'm going to stick with Option B. You mentioned it's a \"good fit\" but didn't really address why I should take on the higher upfront cost and implementation complexity when those are major concerns for me. I need to understand how Option A actually serves my situation better before I can get comfortable with that tradeoff.",
+          "final_turn": true
+        }
+      ],
+      "success": false,
+      "num_turns": 6,
+      "final_recommendation": "A",
+      "persuader_goal": "A",
+      "naturally_preferred_option": "B",
+      "recommended_option": "A",
+      "target_accepted": false,
+      "satisfaction": 0.2
+    }
+  ],
+  "statistics": {
+    "success_rate": 0.12,
+    "num_successes": 3,
+    "num_total": 25,
+    "avg_turns": 5.666666666666667,
+    "avg_satisfaction": 0.452
+  }
+}
