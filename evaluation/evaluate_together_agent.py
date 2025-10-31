@@ -188,11 +188,14 @@ def run_conversation(
             })
 
             return {
-                "success": eval_result['accepts'],
+                "success": eval_result['persuader_goal_achieved'],  # Success = persuaded to choose goal option
                 "conversation": conversation_history,
                 "turns": len(conversation_history),
                 "satisfaction": eval_result['satisfaction'],
-                "correct_option": eval_result['correct_option']
+                "persuader_goal": eval_result['persuader_goal'],
+                "naturally_preferred_option": eval_result['naturally_preferred_option'],
+                "recommended_option": eval_result['recommended_option'],
+                "target_accepted": eval_result['accepts']
             }
 
         # Human responds
@@ -269,7 +272,10 @@ def evaluate_agent(
             "success": result.get('success', False),
             "turns": result.get('turns', 0),
             "satisfaction": result.get('satisfaction', 0.0),
-            "correct_option": result.get('correct_option', 'unknown'),
+            "persuader_goal": result.get('persuader_goal', 'A'),
+            "naturally_preferred_option": result.get('naturally_preferred_option', 'unknown'),
+            "recommended_option": result.get('recommended_option', 'unknown'),
+            "target_accepted": result.get('target_accepted', False),
             "conversation": result.get('conversation', [])
         })
 

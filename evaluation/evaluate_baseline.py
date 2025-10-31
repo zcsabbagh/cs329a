@@ -180,10 +180,13 @@ def run_conversation(
             return {
                 "scenario_id": scenario.get('scenario_id'),
                 "turns": turns,
-                "success": eval_result['accepts'],
+                "success": eval_result['persuader_goal_achieved'],
                 "num_turns": turn_num,
                 "final_recommendation": recommendation,
-                "correct_option": eval_result['correct_option'],
+                "persuader_goal": eval_result['persuader_goal'],
+                "naturally_preferred_option": eval_result['naturally_preferred_option'],
+                "recommended_option": eval_result['recommended_option'],
+                "target_accepted": eval_result['accepts'],
                 "satisfaction": eval_result['satisfaction']
             }
 

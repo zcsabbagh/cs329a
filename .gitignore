@@ -1,8 +1,31 @@
-.env
+# Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
+*.so
 .Python
-venv/
 env/
+venv/
+.venv/
+
+# API Keys
+.env
+*.key
+
+# Logs
+*.log
+
+# Results (optional - comment out if you want to commit results)
+evaluation/results/*.json
+finetuning/data/*.jsonl
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Temporary files
+*.tmp
+*.bak
